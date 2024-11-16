@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ac2743f30a5d354c9a386cf6ef55f62, type: 3}
+  m_Name: q_color
+  m_EditorClassIdentifier: 
+  items:
+  - id: 1
+    name: "\u767D"
+    valueType: '#FaF9F5'
+  - id: 2
+    name: "\u571F\u9EC4\u8272"
+    valueType: '#FFFBA5'
+  - id: 3
+    name: "\u7070\u8272"
+    valueType: '#C9C8D8'
+  - id: 4
+    name: "\u5496\u5561\u8272"
+    valueType: '#7F6070'
+  - id: 5
+    name: "\u6DF1\u7D2B\u8272"
+    valueType: '#B0849D'
+  - id: 6
+    name: "\u8910\u8272"
+    valueType: '#D2AF9C'
+  - id: 7
+    name: "\u6D2A\u603B\u8272"
+    valueType: '#D18E85'
+  - id: 8
+    name: "\u7816\u7EA2\u8272"
+    valueType: '#C16E66'
+  - id: 9
+    name: "\u6DF1\u7070\u8272"
+    valueType: '#A29EAD'

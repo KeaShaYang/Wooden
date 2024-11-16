@@ -1,0 +1,4 @@
+repository "Wooden@ellaner@cloud.cn"
+  path "/"
+    br "/main"
+    co "/main"

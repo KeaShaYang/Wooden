@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 7c225bf310e8edd43bed4ce2936a6726
+timeCreated: 1514281648
+licenseType: Pro
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - camTargetTexture: {fileID: 8400000, guid: 8f05e9b0f50453f4ca173a38041f1e4f, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
