@@ -472,6 +472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6556579770682017407}
   - component: {fileID: 6556579770682017404}
+  - component: {fileID: 6177359240018100470}
   - component: {fileID: 6556579770682017406}
   - component: {fileID: 4520653353732311916}
   m_Layer: 5
@@ -511,6 +512,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6556579770682017392}
   m_CullTransparentMesh: 0
+--- !u!223 &6177359240018100470
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6556579770682017392}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!114 &6556579770682017406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -528,13 +550,14 @@ MonoBehaviour:
   m_CloseBtn: {fileID: 5668346043672806918}
   img: {fileID: 6556579770203385397}
   unlockLockNum: 2
-  unlockSlotNum: 4
   maxColor: 3
   m_StingNum: 12
   LockListGo: {fileID: 1443592943638131607}
   SlotListGo: {fileID: 5418542563500824982}
   m_text_lastStingNum: {fileID: 6345321442913744734}
   m_text_Progress: {fileID: 6289786755341061969}
+  m_LockList: []
+  m_slotList: []
 --- !u!114 &4520653353732311916
 MonoBehaviour:
   m_ObjectHideFlags: 0

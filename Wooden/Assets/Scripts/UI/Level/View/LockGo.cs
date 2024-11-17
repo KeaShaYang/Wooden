@@ -1,4 +1,6 @@
 ﻿using Assets.Scripts.UI;
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,12 +20,15 @@ public class LockGo : BaseMonoBehaviour
     private Image m_Image;
     private int m_slotLength = 0;
     public ClickUIObj m_LockBtn;
+    private List<Sting> m_haveStings = new List<Sting>();
     protected override void Awake()
     {
         m_Image = GetComponent<Image>();
         m_SlotArr = GetComponentsInChildren<Slot>();
-        m_slotLength = m_SlotArr.Length;
+        
     }
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -32,8 +37,10 @@ public class LockGo : BaseMonoBehaviour
     }
     public void F_Init(int color,bool isUnlock)
     {
+        m_isFull = false;
         F_SetColor(color);
         m_unLock = isUnlock;
+        m_slotLength = m_SlotArr.Length;
         m_LockBtn.gameObject.SetActive(!isUnlock);
     }
     private void F_SetColor(int colorType)
@@ -41,20 +48,20 @@ public class LockGo : BaseMonoBehaviour
         m_colorType = colorType;
         if (colorType == 0)
             m_isFull = false;
-        else
-            m_isFull = true;
         q_colorExcelItem cfg = ExcelManager.GetInstance().GetExcelItem<q_color, q_colorExcelItem>(colorType);
+        if (null != cfg)
         // 修改颜色为红色
-        Color color = new Color();
-        if (ColorUtility.TryParseHtmlString(cfg.valueType,out color))
         {
-            m_Image.color = color;
+            Color color = new Color();
+            if (ColorUtility.TryParseHtmlString(cfg.valueType, out color))
+            {
+                m_Image.color = color;
+            }
+            for (int i = 0; i < m_SlotArr.Length; i++)
+            {
+                m_SlotArr[i].F_Init(colorType, this);
+            }
         }
-        for (int i = 0; i < m_SlotArr.Length; i++)
-        {
-            m_SlotArr[i].F_Init(colorType,this);
-        }
-       
     }
     /// <summary>
     /// 孔位装入钉子时回调
@@ -63,8 +70,33 @@ public class LockGo : BaseMonoBehaviour
     {
         m_slotLength--;
         if (m_slotLength <= 0)
-        { 
+        {
             //说明孔位已满，通知winlevel生成一个新的锁并播放向左的动画，然后重新生成颜色
+            if (V_SlotArr[V_SlotArr.Length - 1].V_IsFull)
+            {
+                m_isFull = true;
+                LevelMgr.GetInstance().V_Model.F_RemoveLock(this);
+            }
         }
+    }
+    public void F_AddSting(Sting sting)
+    {
+        //记录这个锁持有的螺丝
+        //方便重置锁的时候把旧的螺丝销毁
+        m_haveStings.Add(sting);
+    }
+    public void F_ClearStings()
+    {
+        for (int i = 0; i < m_haveStings.Count; i++)
+        {
+            if (null != m_haveStings)
+            {
+                Destroy(m_haveStings[i].gameObject);
+                m_haveStings[i] = null;
+            }
+        }
+        //记录这个锁持有的螺丝
+        //方便重置锁的时候把旧的螺丝销毁
+        m_haveStings.Clear();
     }
 }

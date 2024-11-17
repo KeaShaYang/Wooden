@@ -104,6 +104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4965702700857388931}
   - component: {fileID: 4965702700857388933}
+  - component: {fileID: 6793977487462122041}
   - component: {fileID: 4965702700857388932}
   m_Layer: 5
   m_Name: WinStart
@@ -111,7 +112,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4965702700857388931
 RectTransform:
   m_ObjectHideFlags: 0
@@ -140,6 +141,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4965702700857388930}
   m_CullTransparentMesh: 0
+--- !u!223 &6793977487462122041
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4965702700857388930}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!114 &4965702700857388932
 MonoBehaviour:
   m_ObjectHideFlags: 0

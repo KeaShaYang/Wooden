@@ -41,7 +41,6 @@ public class Cube : BaseMonoBehaviour
             lastStingNum--;
             if (lastStingNum == 0)
             {
-                Debug.Log("没有钉子啦，木块要掉下去咯");
                 // 开启重力
                 m_rigidBody.useGravity = true;
                 m_rigidBody.isKinematic = false;

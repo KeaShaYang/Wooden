@@ -24,7 +24,7 @@ public class UIManager : Singleton<UIManager>
         m_pathDic.Add(EM_WinType.WinLoading, "UI/WinLoading");
         m_pathDic.Add(EM_WinType.WinMain, "UI/Level/WinMain");
         m_pathDic.Add(EM_WinType.WinLevel, "UI/Level/WinLevel");
-        m_pathDic.Add(EM_WinType.WinLevelResult, "UI/WinLevelResult");
+        m_pathDic.Add(EM_WinType.WinLevelResult, "UI/Level/WinLevelResult");
     }
     public void F_AddWin(EM_WinType winType,BaseWindow win)
     {

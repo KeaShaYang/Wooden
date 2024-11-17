@@ -11,9 +11,16 @@ public class Sting : BaseMonoBehaviour
     public bool isMoved = false;
     private Cube m_Parent1;
     private Cube m_Parent2;
+    /// <summary>
+    /// 钉子颜色
+    /// </summary>
     private int m_colorType = 1;
     public int V_ColorType { get { return m_colorType; } }
-
+    private int m_index = 0;
+    /// <summary>
+    /// 钉子序号
+    /// </summary>
+    public int V_Index { get { return m_index; } }
     /// <summary>
     /// 已点击过，避免重复移动
     /// </summary>
@@ -37,7 +44,7 @@ public class Sting : BaseMonoBehaviour
         q_colorExcelItem cfg = ExcelManager.GetInstance().GetExcelItem<q_color, q_colorExcelItem>(colorType);
         // 修改颜色为红色
         Color color = new Color();
-        if (ColorUtility.TryParseHtmlString(cfg.valueType, out color))
+        if (null!= cfg && ColorUtility.TryParseHtmlString(cfg.valueType, out color))
         {
             m_material.color = color;
         }
@@ -52,7 +59,9 @@ public class Sting : BaseMonoBehaviour
         if (!m_isMoving)
         {
             m_isMoving = true;
-            m_currentPos = transform.position;
+            m_currentPos.x = transform.position.x;
+            m_currentPos.y = transform.position.y;
+            m_currentPos.z = transform.position.z;
             //拔钉子
             //返回是否可拔，播放动画
             //拔成功的话就增加重力
@@ -69,7 +78,7 @@ public class Sting : BaseMonoBehaviour
                 {
                     float time = hit.distance / 2;
                     //移动失败了，先移动到碰撞的位置然后挪获取
-                    transform.DOMove(hit.point, time).SetSpeedBased(true).OnComplete(() =>
+                    transform.DOMove(hit.point, time).OnComplete(() =>
                     {
                         transform.DOMove(m_currentPos, time);
                     });
@@ -84,6 +93,8 @@ public class Sting : BaseMonoBehaviour
     }
     private void F_RemoveSting()
     {
+        Destroy(m_rigidBody);
+        m_rigidBody = null;
         transform.DOMove(m_currentPos + new Vector3(0, 1, 0), 2f).SetSpeedBased(true).OnComplete(() =>
         {
             isMoved = true;
