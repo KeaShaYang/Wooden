@@ -16,15 +16,10 @@ MonoBehaviour:
   - id: 1
     colorNum: 3
     stingNum: 12
-    model: 
+    model: 1
     reward: 
   - id: 2
     colorNum: 5
-    stingNum: 50
-    model: 
-    reward: 
-  - id: 3
-    colorNum: 7
-    stingNum: 100
-    model: 
+    stingNum: 60
+    model: 2
     reward: 

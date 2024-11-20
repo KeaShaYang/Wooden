@@ -10,7 +10,7 @@ public class q_levelExcelItem : ExcelItemBase
 {
 	public int colorNum;
 	public int stingNum;
-	public string model;
+	public int model;
 	public string reward;
 }
 
@@ -34,7 +34,7 @@ public class q_levelAssetAssignment
 			items[i].id = Convert.ToInt32(allItemValueRowList[i]["id"]);
 			items[i].colorNum = Convert.ToInt32(allItemValueRowList[i]["colorNum"]);
 			items[i].stingNum = Convert.ToInt32(allItemValueRowList[i]["stingNum"]);
-			items[i].model = allItemValueRowList[i]["model"];
+			items[i].model = Convert.ToInt32(allItemValueRowList[i]["model"]);
 			items[i].reward = allItemValueRowList[i]["reward"];
 		}
 		q_level excelDataAsset = ScriptableObject.CreateInstance<q_level>();

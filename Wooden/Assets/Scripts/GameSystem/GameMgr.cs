@@ -12,6 +12,7 @@ class GameMgr : Singleton<GameMgr>
     public void F_InitManager()
     {
         TimerMgr.GetInstance().Init();
+        GameObjectPool.GetInstance().F_Init();
         DisplayManager.GetInstance().F_Init();
         PanelManager.GetInstance().F_Init();
     }
@@ -21,7 +22,7 @@ class GameMgr : Singleton<GameMgr>
     public void F_GameStart()
     {
         V_Model.F_Init();
-        GameObjectPool.GetInstance().F_Init();
+       
     }
     public void F_BattleChange(bool result)
     {

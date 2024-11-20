@@ -42,8 +42,8 @@ public class TimerMgr:Singleton<TimerMgr>
     /// 以秒为单位调用方法methodName，然后在每个repeatRate重复调用。
     /// </summary>
     /// <param name="methodName">回调函数</param>
-    /// <param name="time">延迟调用</param>
-    /// <param name="repeatRate">时间间隔</param>
+    /// <param name="time">延迟调用,秒</param>
+    /// <param name="repeatRate">时间间隔,秒</param>
     /// <param name="repeat">重复调用的次数 小于等于0表示无限触发</param>
     public int Schedule(TimerHandler methodName, float time, float repeatRate, int repeat = 0)
     {

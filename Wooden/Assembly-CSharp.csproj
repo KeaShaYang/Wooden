@@ -83,7 +83,6 @@
     <Compile Include="Assets\Scripts\Core\Entity.cs" />
     <Compile Include="Assets\Scripts\Core\EntityView.cs" />
     <Compile Include="Assets\Scripts\Core\MVC\BaseMonoBehaviour.cs" />
-    <Compile Include="Assets\Scripts\Core\MVC\EntityViewMgr.cs" />
     <Compile Include="Assets\Scripts\Core\MVC\GameModel.cs" />
     <Compile Include="Assets\Scripts\Core\MVC\Model.cs" />
     <Compile Include="Assets\Scripts\Core\MVC\Notifier.cs" />
@@ -100,6 +99,7 @@
     <Compile Include="Assets\Scripts\Data\q_TempleteExcelData.cs" />
     <Compile Include="Assets\Scripts\Define\EM_EntityType.cs" />
     <Compile Include="Assets\Scripts\Define\EM_WinType.cs" />
+    <Compile Include="Assets\Scripts\EntityData\WoodenData.cs" />
     <Compile Include="Assets\Scripts\Excel\q_buff.cs" />
     <Compile Include="Assets\Scripts\Excel\q_color.cs" />
     <Compile Include="Assets\Scripts\Excel\q_display.cs" />

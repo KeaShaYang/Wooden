@@ -6,9 +6,6 @@ using UnityEngine.UI;
 public class WinLevel : BaseWindow
 {
     public RawImage img;
-    public int unlockLockNum = 2;
-    public int maxColor = 3;
-    public int m_StingNum = 12;
     public Transform LockListGo;
     public Transform SlotListGo;
     public Text m_text_lastStingNum;
@@ -17,7 +14,7 @@ public class WinLevel : BaseWindow
     private LockGo[] m_LockList;
     [SerializeField]
     private Slot[] m_slotList;
-    Wooden m_wooden;
+    public HorizontalLayoutGroup m_LayoutGroup;
     public override EM_WinType F_GetWinType()
     {
         return EM_WinType.WinLevel;
@@ -29,24 +26,27 @@ public class WinLevel : BaseWindow
         m_slotList = SlotListGo.GetComponentsInChildren<Slot>();
     }
 
-    internal void F_Init(RenderTexture render, Wooden wooden)
+    internal void F_Init(RenderTexture render)
     {
         img.texture = render;
-        m_wooden = wooden;
-        //for (int i = 0; i < m_Stings.Length; i++)
-        //{
-        //    m_Stings[i].F_Init(i, LevelMgr.GetInstance().V_Model.F_GetColor(i));
-        //}
-        LevelMgr.GetInstance().V_Model.F_InitLevel(m_wooden,m_LockList,m_slotList);
-        m_StingNum = LevelMgr.GetInstance().V_Model.V_StingCount;
-       
+        LevelMgr.GetInstance().V_Model.F_InitLevel(m_LockList,m_slotList);
+        F_Refresh();
     }
-    public void F_Refresh()
+    public void F_Refresh(bool needReposition = false)
     {
         q_levelExcelItem cfg = LevelMgr.GetInstance().V_Model.F_GetLevelCfg(LevelMgr.GetInstance().V_Model.V_CurrentLevel);
         m_text_Progress.text = "当前关卡" + LevelMgr.GetInstance().V_Model.V_CurrentLevel;
-        m_text_lastStingNum.text = "剩余：" + (cfg.stingNum - LevelMgr.GetInstance().V_Model.V_StingCount);
-
+        m_text_lastStingNum.text = "剩余：" + (LevelMgr.GetInstance().V_Model.V_StingCount - LevelMgr.GetInstance().V_Model.m_removeSting);
+        if (needReposition || LevelMgr.GetInstance().V_Model.V_unlockLockNum > LevelMgr.GetInstance().V_Model.m_lockColors.Count)
+        { 
+            m_LayoutGroup.enabled = true;
+            m_LayoutGroup.SetLayoutHorizontal();
+           
+            TimerMgr.GetInstance().Schedule(() => {
+                if (m_LayoutGroup)
+                    m_LayoutGroup.enabled = false;
+            }, 1, 1, 1);
+        }
     }
 
 }

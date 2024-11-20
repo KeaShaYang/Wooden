@@ -62,7 +62,7 @@ public class DisplayManager : Singleton<DisplayManager>
                 t.transform.SetParent(m_EntityRoot.transform);
                 t.transform.localPosition = Vector3.zero;
                 t.transform.localScale = Vector3.one;
-                if (entity.V_EnityType == EM_EntityType.Sting)
+                if (entity.V_EnityType == EM_EntityType.Wooden)
                 {
                     newEntityView = t.AddComponent<Wooden>() as V;
                     newEntityView.F_Init(entity);

@@ -1,6 +1,6 @@
-﻿using Assets.Scripts.Define;
+﻿using Assets.Scripts.Battle;
+using Assets.Scripts.Define;
 using DG.Tweening;
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -25,11 +25,20 @@ public class LevelModel : Model
     public int V_unlockLockNum { get => m_unlockLockNum; }
     private int m_lockNum = 4;
     public int V_lockNum { get => m_lockNum; }
+
+    internal bool F_isLastLevel()
+    {
+        q_levelExcelItem nextCfg = F_GetLevelCfg(m_currentLevel+1);
+        if (nextCfg == null)
+            return true;
+        return false;
+    }
+
     /// <summary>
     /// 每种颜色有几个钉子
     /// </summary>
     private Dictionary<int, int> m_ColorDic = new Dictionary<int, int>();
-    private Stack<int> m_lockColors = new Stack<int>();
+    public Stack<int> m_lockColors = new Stack<int>();
     private LockGo[] m_lockGos;
     private Wooden m_wooden;
     private Slot[] m_slotList;
@@ -54,9 +63,8 @@ public class LevelModel : Model
     /// 根据关卡初始化颜色数据
     /// </summary>
     /// <param name="wooden">之后要支持多个木块、分层</param>
-    public void F_InitLevel(Wooden wooden, LockGo[] lockGos,Slot[] slots)
+    public void F_InitLevel(LockGo[] lockGos,Slot[] slots)
     {
-        m_wooden = wooden;
         m_lockGos = lockGos;
         m_slotList = slots;
         //todo:改成读玩家数据
@@ -66,6 +74,7 @@ public class LevelModel : Model
     {
         if (level != m_currentLevel)
         {
+            m_removeSting = 0;
             m_currentLevel = 1;
             m_canClick = true;
             V_LevelCfg = F_GetLevelCfg(m_currentLevel);
@@ -77,7 +86,6 @@ public class LevelModel : Model
                 else
                 {
                     GenerateColorTypes(V_LevelCfg.stingNum, V_LevelCfg.colorNum);
-                    m_wooden.F_Init();
                     for (int i = 0; i < m_lockGos.Length; i++)
                     {
                         int lockColorType = i < V_unlockLockNum ? F_GetLockColor() : 0;
@@ -88,6 +96,16 @@ public class LevelModel : Model
                 {
                     m_slotList[i].F_Init(0, null, i < m_unlockSlotNum);
                 }
+            }
+            WoodenData data = new WoodenData();
+            data.F_InitData(V_LevelCfg.id);
+            m_wooden = DisplayManager.GetInstance().F_AddEitity<Wooden>(data);
+            m_wooden.transform.position = Vector3.zero;
+            //通知winlevel，已移除某位置的螺丝
+            WinLevel win = UIManager.GetInstance().GetSingleUI(EM_WinType.WinLevel) as WinLevel;
+            if (null != win)
+            {
+                win.F_Refresh(true);
             }
         }
     }
@@ -183,7 +201,7 @@ public class LevelModel : Model
                                  //检查是否有同色的孔位里的钉子，可以移动到新的锁里
                                  if (!lockGo.V_Full && m_slotList[i].V_IsFull && m_slotList[i].V_ColorType == colorType)
                                  {
-                                     F_RemoveSting(m_slotList[i].V_Sting);
+                                     F_RemoveSting(m_slotList[i].V_Sting,true);
                                  }
                              }
                          }
@@ -197,10 +215,13 @@ public class LevelModel : Model
         }
     }
 
-    public void F_RemoveSting(Sting sting)
+    public void F_RemoveSting(Sting sting,bool fromSlot = false)
     {
-        m_removeSting++;
-        m_removeStingArr[sting.V_Index] = 1;
+        if (!fromSlot)
+        {
+            m_removeSting++;
+            m_removeStingArr[sting.V_Index] = 1;
+        }
         //通知winlevel，已移除某位置的螺丝
         WinLevel win = UIManager.GetInstance().GetSingleUI(EM_WinType.WinLevel) as WinLevel;
         if (null != win)
@@ -235,7 +256,12 @@ public class LevelModel : Model
         {
             //成功界面
             m_canClick = false;
-            UIManager.GetInstance().GetSingleUI(Assets.Scripts.Define.EM_WinType.WinLevelResult);
+            TimerMgr.GetInstance().Schedule(() =>
+            {
+                WinLevelResult winRes = UIManager.GetInstance().GetSingleUI(EM_WinType.WinLevelResult) as WinLevelResult;
+                if (null != winRes)
+                    winRes.F_Init(true);
+            }, 1, 1 , 1);
         }
     }
     private Slot GetEmptySlot(int colorType)
@@ -279,5 +305,9 @@ public class LevelModel : Model
     public q_levelExcelItem F_GetLevelCfg(int level)
     {
         return ExcelManager.GetInstance().GetExcelItem<q_level, q_levelExcelItem>(level);
+    }
+    public Wooden F_GetCurrentWooden()
+    {
+        return m_wooden;
     }
 }

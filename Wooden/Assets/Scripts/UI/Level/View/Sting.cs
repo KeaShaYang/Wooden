@@ -26,27 +26,33 @@ public class Sting : BaseMonoBehaviour
     /// </summary>
     private bool m_isMoving = false;
     Material m_material;
+    private CapsuleCollider m_collider;
+
     // Start is called before the first frame update
-    void Start()
+    protected override void Awake()
     {
         MeshRenderer renderer = GetComponent<MeshRenderer>();
         m_material = renderer.material;
+        m_collider = GetComponent<CapsuleCollider>();
         m_rigidBody = gameObject.GetComponent<Rigidbody>();
         if (m_rigidBody == null)
             m_rigidBody = gameObject.AddComponent<Rigidbody>();
         m_rigidBody.useGravity = false;
         m_rigidBody.isKinematic = true;
     }
-    public void F_Init(int index,int colorType)
+    public void F_Init(int index, int colorType)
     {
         gameObject.name = "sting" + index;
         m_colorType = colorType;
         q_colorExcelItem cfg = ExcelManager.GetInstance().GetExcelItem<q_color, q_colorExcelItem>(colorType);
         // 修改颜色为红色
         Color color = new Color();
-        if (null!= cfg && ColorUtility.TryParseHtmlString(cfg.valueType, out color))
+        if (null != cfg && ColorUtility.TryParseHtmlString(cfg.valueType, out color))
         {
-            m_material.color = color;
+            if (null == color)
+                Debugger.LogError("颜色错误");
+            else
+                m_material.color = color;
         }
     }
     public void F_SetParentCube(Cube c1, Cube c2)
@@ -80,7 +86,7 @@ public class Sting : BaseMonoBehaviour
                     //移动失败了，先移动到碰撞的位置然后挪获取
                     transform.DOMove(hit.point, time).OnComplete(() =>
                     {
-                        transform.DOMove(m_currentPos, time);
+                        transform.DOMove(m_currentPos, time).OnComplete(() => { m_isMoving = false; });
                     });
                 }
 
@@ -93,6 +99,7 @@ public class Sting : BaseMonoBehaviour
     }
     private void F_RemoveSting()
     {
+        m_collider.enabled = false;
         Destroy(m_rigidBody);
         m_rigidBody = null;
         transform.DOMove(m_currentPos + new Vector3(0, 1, 0), 2f).SetSpeedBased(true).OnComplete(() =>
@@ -109,6 +116,6 @@ public class Sting : BaseMonoBehaviour
                 m_Parent2.F_RemoveSting(this);
             }
         });
-        
+
     }
 }

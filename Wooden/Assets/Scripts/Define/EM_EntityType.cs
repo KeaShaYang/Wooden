@@ -10,7 +10,7 @@
         /// <summary>
         /// 木块
         /// </summary>
-        Cube,
+        Wooden,
         /// <summary>
         /// buff
         /// </summary>

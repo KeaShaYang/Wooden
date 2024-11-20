@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System;
 
-public class CommonButton : MonoBehaviour, IPointerClickHandler
+public class CommonButton : BaseMonoBehaviour,IPointerClickHandler
 {
     public Text m_Text;
     public Text m_TextDis;
@@ -18,19 +18,10 @@ public class CommonButton : MonoBehaviour, IPointerClickHandler
     {
         if (null != m_ActiveIcon)
             m_ActiveIcon.gameObject.SetActive(false);
+        if (null != m_disAciveIcon)
+            m_disAciveIcon.gameObject.SetActive(true);
     }
     public void F_ForceClick()
-    {
-        if (null != m_clickCall)
-        {
-            m_clickCall(this);
-        }
-        else
-        {
-            F_SetSelect(true);
-        }
-    }
-    public void OnPointerClick(PointerEventData eventData)
     {
         if (null != m_clickCall)
         {
@@ -58,5 +49,17 @@ public class CommonButton : MonoBehaviour, IPointerClickHandler
         m_isSelect = select;
         m_ActiveIcon.SetActive(select);
         m_disAciveIcon.SetActive(!select);
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (null != m_clickCall)
+        {
+            m_clickCall(this);
+        }
+        else
+        {
+            F_SetSelect(true);
+        }
     }
 }

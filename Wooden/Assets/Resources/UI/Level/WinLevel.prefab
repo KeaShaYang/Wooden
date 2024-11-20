@@ -475,6 +475,7 @@ GameObject:
   - component: {fileID: 6177359240018100470}
   - component: {fileID: 6556579770682017406}
   - component: {fileID: 4520653353732311916}
+  - component: {fileID: 6555800895783645261}
   m_Layer: 5
   m_Name: WinLevel
   m_TagString: Untagged
@@ -549,15 +550,13 @@ MonoBehaviour:
   V_PrefabPath: 
   m_CloseBtn: {fileID: 5668346043672806918}
   img: {fileID: 6556579770203385397}
-  unlockLockNum: 2
-  maxColor: 3
-  m_StingNum: 12
   LockListGo: {fileID: 1443592943638131607}
   SlotListGo: {fileID: 5418542563500824982}
   m_text_lastStingNum: {fileID: 6345321442913744734}
   m_text_Progress: {fileID: 6289786755341061969}
   m_LockList: []
   m_slotList: []
+  m_LayoutGroup: {fileID: 409479750635332608}
 --- !u!114 &4520653353732311916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -587,6 +586,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6555800895783645261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6556579770682017392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &6775548630226945225
 GameObject:
   m_ObjectHideFlags: 0
