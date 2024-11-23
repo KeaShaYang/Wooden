@@ -8,6 +8,7 @@ public class Cube : BaseMonoBehaviour
     private int lastStingNum = 0;
     private List<Sting> m_connetSting = new List<Sting>();
     private Material m_material;
+    private int m_timer = -1;
 
     // Start is called before the first frame update
     protected override void Awake()
@@ -48,21 +49,32 @@ public class Cube : BaseMonoBehaviour
     }
     public void F_RemoveSting(Sting sting)
     {
-        if (null != sting)
+        if (null != sting && lastStingNum > 0)
         {
             lastStingNum--;
-            if (lastStingNum == 0)
+            if (lastStingNum <= 0)
             {
                 // 开启重力
                 m_rigidBody.useGravity = true;
                 m_rigidBody.isKinematic = false;
-                TimerMgr.GetInstance().Schedule(()=> {
-                    m_rigidBody.useGravity = false;
-                    m_rigidBody.isKinematic = true;
-                    gameObject.SetActive(false);
-                }, 1, 1, 1);
+                if (m_timer > -1)
+                    TimerMgr.GetInstance().Unschedule(m_timer);
+                m_timer = TimerMgr.GetInstance().Schedule(()=> {
+                    if (transform.position.y < -200)
+                    {
+                        m_rigidBody.useGravity = false;
+                        m_rigidBody.isKinematic = true;
+                        TimerMgr.GetInstance().Unschedule(m_timer);
+                        Destroy(gameObject);
+                    }
+                }, 1, 1);
                 //延迟destroy自己
             }
         }
+    }
+    private void OnDestroy()
+    {
+        if (m_timer > -1)
+            TimerMgr.GetInstance().Unschedule(m_timer);
     }
 }

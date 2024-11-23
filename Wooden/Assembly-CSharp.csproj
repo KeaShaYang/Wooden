@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{0788281D-7397-03FA-4436-77EAD97A55E2}</ProjectGuid>
+    <ProjectGuid>{1d288807-9773-fa03-4436-77ead97a55e2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -22,16 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_2019_4_13;UNITY_2019_4;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>Temp\bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_2019_4_13;UNITY_2019_4;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -44,1034 +35,1015 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
-  <PropertyGroup>
-    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>4.10.2.0</UnityProjectGeneratorVersion>
-    <UnityProjectType>Game:1</UnityProjectType>
-    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
-    <UnityVersion>2019.4.13f1c1</UnityVersion>
-  </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
+     <Compile Include="Assets\PhotoGraphing\Scripts\CaptureCamera\BeenShot.cs" />
+     <Compile Include="Assets\PhotoGraphing\Scripts\CaptureCamera\CalculateBounder.cs" />
+     <Compile Include="Assets\PhotoGraphing\Scripts\CaptureCamera\CameraPhotoGraphing.cs" />
+     <Compile Include="Assets\PhotoGraphing\Scripts\CaptureCamera\CaptureObjectSystem.cs" />
+     <Compile Include="Assets\PhotoGraphing\Scripts\CaptureCamera\CreateCaptureCamera.cs" />
+     <Compile Include="Assets\PhotoGraphing\Scripts\CaptureCamera\Enum\CaptureCameraSetting.cs" />
+     <Compile Include="Assets\PhotoGraphing\Scripts\CaptureCamera\LayerRecord.cs" />
+     <Compile Include="Assets\PhotoGraphing\Scripts\FilePathFactory.cs" />
+     <Compile Include="Assets\PhotoGraphing\Scripts\MonoSingleton.cs" />
+     <Compile Include="Assets\Scripts\Common\ClickUIObj.cs" />
+     <Compile Include="Assets\Scripts\Common\CommonButton.cs" />
+     <Compile Include="Assets\Scripts\Common\EmptyImage.cs" />
+     <Compile Include="Assets\Scripts\Common\UIFollowObject.cs" />
+     <Compile Include="Assets\Scripts\Common\UITexSetter.cs" />
+     <Compile Include="Assets\Scripts\Common\UIsantuTable.cs" />
+     <Compile Include="Assets\Scripts\Config\DataPath.cs" />
+     <Compile Include="Assets\Scripts\Core\Entity.cs" />
+     <Compile Include="Assets\Scripts\Core\EntityView.cs" />
+     <Compile Include="Assets\Scripts\Core\MVC\BaseMonoBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Core\MVC\GameModel.cs" />
+     <Compile Include="Assets\Scripts\Core\MVC\Model.cs" />
+     <Compile Include="Assets\Scripts\Core\MVC\Notifier.cs" />
+     <Compile Include="Assets\Scripts\Core\MVC\Singleton.cs" />
+     <Compile Include="Assets\Scripts\Core\MVC\View.cs" />
+     <Compile Include="Assets\Scripts\Core\ObjectPool.cs" />
+     <Compile Include="Assets\Scripts\Core\Panel\BaseWindow.cs" />
+     <Compile Include="Assets\Scripts\Core\Panel\PanelManager.cs" />
+     <Compile Include="Assets\Scripts\Core\Panel\UIManger.cs" />
+     <Compile Include="Assets\Scripts\Core\Timer\AbsTimerData.cs" />
+     <Compile Include="Assets\Scripts\Core\Timer\TimerHeap.cs" />
+     <Compile Include="Assets\Scripts\Data\ExcelDataBase.cs" />
+     <Compile Include="Assets\Scripts\Data\GameData.cs" />
+     <Compile Include="Assets\Scripts\Data\q_TempleteExcelData.cs" />
+     <Compile Include="Assets\Scripts\Define\EM_EntityType.cs" />
+     <Compile Include="Assets\Scripts\Define\EM_WinType.cs" />
+     <Compile Include="Assets\Scripts\EntityData\WoodenData.cs" />
+     <Compile Include="Assets\Scripts\Excel\q_buff.cs" />
+     <Compile Include="Assets\Scripts\Excel\q_color.cs" />
+     <Compile Include="Assets\Scripts\Excel\q_display.cs" />
+     <Compile Include="Assets\Scripts\Excel\q_level.cs" />
+     <Compile Include="Assets\Scripts\GameSystem\Debugger.cs" />
+     <Compile Include="Assets\Scripts\GameSystem\DisplayManager.cs" />
+     <Compile Include="Assets\Scripts\GameSystem\ExcelManager .cs" />
+     <Compile Include="Assets\Scripts\GameSystem\GameMgr.cs" />
+     <Compile Include="Assets\Scripts\GameSystem\GameObjectPool.cs" />
+     <Compile Include="Assets\Scripts\GameSystem\PositionConvertMgr.cs" />
+     <Compile Include="Assets\Scripts\GameSystem\TimerMgr.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\LitJson\IJsonWrapper.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\LitJson\JsonData.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\LitJson\JsonException.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\LitJson\JsonMapper.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\LitJson\JsonReader.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\LitJson\JsonWriter.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\LitJson\Lexer.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\LitJson\ParserToken.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\Mono.Xml\MiniParser.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\Mono.Xml\SecurityParser.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\DisposableObject.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\DisposableOpenCVObject.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\calib3d\Calib3d.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\calib3d\StereoBM.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\calib3d\StereoMatcher.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\calib3d\StereoSGBM.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\calib3d\UsacParams.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\Algorithm.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\Core.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\CvException.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\CvType.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\DMatch.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\KeyPoint.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\Mat.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfByte.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfDMatch.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfDouble.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfFloat.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfFloat4.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfFloat6.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfInt.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfInt4.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfKeyPoint.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfPoint.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfPoint2f.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfPoint3.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfPoint3f.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfRect.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfRect2d.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfRotatedRect.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\Point.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\Point3.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\Range.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\Rect.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\Rect2d.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\RotatedRect.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\Scalar.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\Size.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\TermCriteria.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\TickMeter.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\dnn\ClassificationModel.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\dnn\DetectionModel.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\dnn\DictValue.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\dnn\Dnn.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\dnn\KeypointsModel.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\dnn\Layer.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\dnn\Model.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\dnn\Net.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\dnn\SegmentationModel.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\AKAZE.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\AffineFeature.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\AgastFeatureDetector.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\BFMatcher.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\BOWImgDescriptorExtractor.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\BOWKMeansTrainer.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\BOWTrainer.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\BRISK.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\DescriptorMatcher.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\FastFeatureDetector.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\Feature2D.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\Features2d.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\FlannBasedMatcher.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\GFTTDetector.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\KAZE.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\MSER.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\ORB.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\Params.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\SIFT.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\SimpleBlobDetector.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\imgcodecs\Imgcodecs.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\imgproc\CLAHE.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\imgproc\GeneralizedHough.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\imgproc\GeneralizedHoughBallard.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\imgproc\GeneralizedHoughGuil.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\imgproc\Imgproc.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\imgproc\LineSegmentDetector.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\imgproc\Moments.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\imgproc\Subdiv2D.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\ANN_MLP.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\Boost.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\DTrees.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\EM.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\KNearest.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\LogisticRegression.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\Ml.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\NormalBayesClassifier.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\ParamGrid.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\RTrees.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\SVM.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\SVMSGD.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\StatModel.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\TrainData.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\objdetect\BaseCascadeClassifier.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\objdetect\CascadeClassifier.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\objdetect\HOGDescriptor.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\objdetect\Objdetect.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\objdetect\QRCodeDetector.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\AlignExposures.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\AlignMTB.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\CalibrateCRF.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\CalibrateDebevec.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\CalibrateRobertson.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\MergeDebevec.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\MergeExposures.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\MergeMertens.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\MergeRobertson.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\Photo.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\Tonemap.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\TonemapDrago.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\TonemapMantiuk.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\TonemapReinhard.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\unity\ARUtils.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\unity\Utils.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\unity\helper\ImageOptimizationHelper.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\unity\helper\VideoCaptureToMatHelper.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\unity\helper\WebCamTextureToMatHelper.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\utils\Converters.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\utils\MatIndexer.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\utils\MatUtils.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\video\BackgroundSubtractor.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\video\BackgroundSubtractorKNN.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\video\BackgroundSubtractorMOG2.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\video\DISOpticalFlow.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\video\DenseOpticalFlow.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\video\FarnebackOpticalFlow.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\video\KalmanFilter.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\video\SparseOpticalFlow.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\video\SparsePyrLKOpticalFlow.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\video\VariationalRefinement.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\video\Video.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\videoio\VideoCapture.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\videoio\VideoWriter.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\videoio\Videoio.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\aruco\Aruco.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\aruco\Board.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\aruco\CharucoBoard.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\aruco\DetectorParameters.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\aruco\Dictionary.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\aruco\GridBoard.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\bgsegm\BackgroundSubtractorCNT.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\bgsegm\BackgroundSubtractorGMG.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\bgsegm\BackgroundSubtractorGSOC.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\bgsegm\BackgroundSubtractorLSBP.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\bgsegm\BackgroundSubtractorLSBPDesc.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\bgsegm\BackgroundSubtractorMOG.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\bgsegm\Bgsegm.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\bgsegm\SyntheticSequenceGenerator.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\bioinspired\Bioinspired.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\bioinspired\Retina.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\bioinspired\RetinaFastToneMapping.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\bioinspired\TransientAreasSegmentationModule.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\BIF.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\BasicFaceRecognizer.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\EigenFaceRecognizer.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\Face.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\FaceRecognizer.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\Facemark.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\FacemarkAAM.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\FacemarkKazemi.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\FacemarkLBF.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\FacemarkTrain.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\FisherFaceRecognizer.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\LBPHFaceRecognizer.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\MACE.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\PredictCollector.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\StandardCollector.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\img_hash\AverageHash.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\img_hash\BlockMeanHash.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\img_hash\ColorMomentHash.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\img_hash\ImgHashBase.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\img_hash\Img_hash.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\img_hash\MarrHildrethHash.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\img_hash\PHash.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\img_hash\RadialVarianceHash.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\phase_unwrapping\HistogramPhaseUnwrapping.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\phase_unwrapping\Params.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\phase_unwrapping\PhaseUnwrapping.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\phase_unwrapping\Phase_unwrapping.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\plot\Plot.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\plot\Plot2d.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\structured_light\GrayCodePattern.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\structured_light\Params.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\structured_light\SinusoidalPattern.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\structured_light\StructuredLightPattern.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\structured_light\Structured_light.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\text\BaseOCR.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\text\Callback.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\text\ClassifierCallback.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\text\ERFilter.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\text\OCRBeamSearchDecoder.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\text\OCRHMMDecoder.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\text\OCRTesseract.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\text\Text.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\text\TextDetector.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\text\TextDetectorCNN.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\tracking\MultiTracker.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\tracking\Tracker.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\tracking\TrackerBoosting.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\tracking\TrackerCSRT.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\tracking\TrackerGOTURN.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\tracking\TrackerKCF.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\tracking\TrackerMIL.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\tracking\TrackerMOSSE.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\tracking\TrackerMedianFlow.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\tracking\TrackerTLD.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\tracking\Tracking.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\BoostDesc.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\BriefDescriptorExtractor.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\DAISY.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\FREAK.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\HarrisLaplaceFeatureDetector.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\LATCH.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\LUCID.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\MSDDetector.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\PCTSignatures.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\PCTSignaturesSQFD.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\SURF.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\SURF_CUDA.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\StarDetector.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\VGG.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\Xfeatures2d.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\AdaptiveManifoldFilter.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\ContourFitting.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\DTFilter.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\DisparityFilter.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\DisparityWLSFilter.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\EdgeAwareInterpolator.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\EdgeBoxes.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\FastBilateralSolverFilter.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\FastGlobalSmootherFilter.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\FastLineDetector.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\GraphSegmentation.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\GuidedFilter.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\RFFeatureGetter.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\RICInterpolator.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\RidgeDetectionFilter.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\SelectiveSearchSegmentation.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\SelectiveSearchSegmentationStrategy.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\SelectiveSearchSegmentationStrategyColor.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\SelectiveSearchSegmentationStrategyFill.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\SelectiveSearchSegmentationStrategyMultiple.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\SelectiveSearchSegmentationStrategySize.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\SelectiveSearchSegmentationStrategyTexture.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\SparseMatchInterpolator.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\StructuredEdgeDetection.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\SuperpixelLSC.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\SuperpixelSEEDS.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\SuperpixelSLIC.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\Ximgproc.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xphoto\GrayworldWB.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xphoto\LearningBasedWB.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xphoto\SimpleWB.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xphoto\TonemapDurand.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xphoto\WhiteBalancer.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xphoto\Xphoto.cs" />
+     <Compile Include="Assets\Scripts\ThirdParty\Scripts\UI\TextGamma.cs" />
+     <Compile Include="Assets\Scripts\Tool\AtlasRefCounter.cs" />
+     <Compile Include="Assets\Scripts\Tool\Common\ShadowGamma.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\ButtonMove.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\ButtonTween.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\CurvedText.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\DragScrollRect.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\Gradient.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\GradientAndOutline.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\ImageEx.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\ImageMaterialProperty.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\InverseScale.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\LetterSpacing.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\MyInputModule.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\MyScrollRect.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\MySlider.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\OutlineAndShadow.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\OutlineBetter.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\RawImageEx.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TextNumClip.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TextSpacing.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\ToggleExtend.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TweenColor.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TweenFillAmount.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TweenHeight.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TweenPosition.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TweenRotation.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TweenScale.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TweenScrollRect.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TweenTransform.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TweenTransformPosition.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TweenUVRect.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TweenWidth.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\UIEffectObjectList.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\UIMirror.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\UIScaleFitter.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\UIShake.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\UISizeFitter.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\UITextId.cs" />
+     <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\UITweener.cs" />
+     <Compile Include="Assets\Scripts\Tool\UITool.cs" />
+     <Compile Include="Assets\Scripts\UI\GameStart.cs" />
+     <Compile Include="Assets\Scripts\UI\Level\Manager\LevelMgr.cs" />
+     <Compile Include="Assets\Scripts\UI\Level\Model\EM_LevelEvent.cs" />
+     <Compile Include="Assets\Scripts\UI\Level\Model\LevelModel.cs" />
+     <Compile Include="Assets\Scripts\UI\Level\View\Cube.cs" />
+     <Compile Include="Assets\Scripts\UI\Level\View\LockGo.cs" />
+     <Compile Include="Assets\Scripts\UI\Level\View\Slot.cs" />
+     <Compile Include="Assets\Scripts\UI\Level\View\Sting.cs" />
+     <Compile Include="Assets\Scripts\UI\Level\View\WinLevelResult.cs" />
+     <Compile Include="Assets\Scripts\UI\Level\View\Wooden.cs" />
+     <Compile Include="Assets\Scripts\UI\WinLevel.cs" />
+     <Compile Include="Assets\Scripts\Util\StringUtility.cs" />
     <Reference Include="UnityEngine">
-      <HintPath>D:\UnityApps\2019.4.13f1c1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor">
-      <HintPath>D:\UnityApps\2019.4.13f1c1\Editor\Data\Managed/UnityEditor.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Assets\PhotoGraphing\Scripts\CaptureCamera\BeenShot.cs" />
-    <Compile Include="Assets\PhotoGraphing\Scripts\CaptureCamera\CalculateBounder.cs" />
-    <Compile Include="Assets\PhotoGraphing\Scripts\CaptureCamera\CameraPhotoGraphing.cs" />
-    <Compile Include="Assets\PhotoGraphing\Scripts\CaptureCamera\CaptureObjectSystem.cs" />
-    <Compile Include="Assets\PhotoGraphing\Scripts\CaptureCamera\CreateCaptureCamera.cs" />
-    <Compile Include="Assets\PhotoGraphing\Scripts\CaptureCamera\Enum\CaptureCameraSetting.cs" />
-    <Compile Include="Assets\PhotoGraphing\Scripts\CaptureCamera\LayerRecord.cs" />
-    <Compile Include="Assets\PhotoGraphing\Scripts\FilePathFactory.cs" />
-    <Compile Include="Assets\PhotoGraphing\Scripts\MonoSingleton.cs" />
-    <Compile Include="Assets\Scripts\Common\ClickUIObj.cs" />
-    <Compile Include="Assets\Scripts\Common\CommonButton.cs" />
-    <Compile Include="Assets\Scripts\Common\EmptyImage.cs" />
-    <Compile Include="Assets\Scripts\Common\UIFollowObject.cs" />
-    <Compile Include="Assets\Scripts\Common\UITexSetter.cs" />
-    <Compile Include="Assets\Scripts\Common\UIsantuTable.cs" />
-    <Compile Include="Assets\Scripts\Config\DataPath.cs" />
-    <Compile Include="Assets\Scripts\Core\Entity.cs" />
-    <Compile Include="Assets\Scripts\Core\EntityView.cs" />
-    <Compile Include="Assets\Scripts\Core\MVC\BaseMonoBehaviour.cs" />
-    <Compile Include="Assets\Scripts\Core\MVC\GameModel.cs" />
-    <Compile Include="Assets\Scripts\Core\MVC\Model.cs" />
-    <Compile Include="Assets\Scripts\Core\MVC\Notifier.cs" />
-    <Compile Include="Assets\Scripts\Core\MVC\Singleton.cs" />
-    <Compile Include="Assets\Scripts\Core\MVC\View.cs" />
-    <Compile Include="Assets\Scripts\Core\ObjectPool.cs" />
-    <Compile Include="Assets\Scripts\Core\Panel\BaseWindow.cs" />
-    <Compile Include="Assets\Scripts\Core\Panel\PanelManager.cs" />
-    <Compile Include="Assets\Scripts\Core\Panel\UIManger.cs" />
-    <Compile Include="Assets\Scripts\Core\Timer\AbsTimerData.cs" />
-    <Compile Include="Assets\Scripts\Core\Timer\TimerHeap.cs" />
-    <Compile Include="Assets\Scripts\Data\ExcelDataBase.cs" />
-    <Compile Include="Assets\Scripts\Data\GameData.cs" />
-    <Compile Include="Assets\Scripts\Data\q_TempleteExcelData.cs" />
-    <Compile Include="Assets\Scripts\Define\EM_EntityType.cs" />
-    <Compile Include="Assets\Scripts\Define\EM_WinType.cs" />
-    <Compile Include="Assets\Scripts\EntityData\WoodenData.cs" />
-    <Compile Include="Assets\Scripts\Excel\q_buff.cs" />
-    <Compile Include="Assets\Scripts\Excel\q_color.cs" />
-    <Compile Include="Assets\Scripts\Excel\q_display.cs" />
-    <Compile Include="Assets\Scripts\Excel\q_level.cs" />
-    <Compile Include="Assets\Scripts\GameSystem\Debugger.cs" />
-    <Compile Include="Assets\Scripts\GameSystem\DisplayManager.cs" />
-    <Compile Include="Assets\Scripts\GameSystem\ExcelManager .cs" />
-    <Compile Include="Assets\Scripts\GameSystem\GameMgr.cs" />
-    <Compile Include="Assets\Scripts\GameSystem\GameObjectPool.cs" />
-    <Compile Include="Assets\Scripts\GameSystem\PositionConvertMgr.cs" />
-    <Compile Include="Assets\Scripts\GameSystem\TimerMgr.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\LitJson\IJsonWrapper.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\LitJson\JsonData.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\LitJson\JsonException.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\LitJson\JsonMapper.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\LitJson\JsonReader.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\LitJson\JsonWriter.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\LitJson\Lexer.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\LitJson\ParserToken.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\Mono.Xml\MiniParser.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\Mono.Xml\SecurityParser.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\DisposableObject.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\DisposableOpenCVObject.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\calib3d\Calib3d.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\calib3d\StereoBM.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\calib3d\StereoMatcher.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\calib3d\StereoSGBM.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\calib3d\UsacParams.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\Algorithm.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\Core.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\CvException.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\CvType.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\DMatch.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\KeyPoint.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\Mat.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfByte.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfDMatch.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfDouble.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfFloat.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfFloat4.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfFloat6.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfInt.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfInt4.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfKeyPoint.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfPoint.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfPoint2f.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfPoint3.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfPoint3f.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfRect.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfRect2d.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\MatOfRotatedRect.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\Point.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\Point3.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\Range.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\Rect.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\Rect2d.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\RotatedRect.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\Scalar.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\Size.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\TermCriteria.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\core\TickMeter.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\dnn\ClassificationModel.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\dnn\DetectionModel.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\dnn\DictValue.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\dnn\Dnn.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\dnn\KeypointsModel.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\dnn\Layer.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\dnn\Model.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\dnn\Net.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\dnn\SegmentationModel.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\AKAZE.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\AffineFeature.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\AgastFeatureDetector.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\BFMatcher.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\BOWImgDescriptorExtractor.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\BOWKMeansTrainer.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\BOWTrainer.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\BRISK.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\DescriptorMatcher.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\FastFeatureDetector.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\Feature2D.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\Features2d.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\FlannBasedMatcher.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\GFTTDetector.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\KAZE.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\MSER.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\ORB.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\Params.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\SIFT.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\features2d\SimpleBlobDetector.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\imgcodecs\Imgcodecs.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\imgproc\CLAHE.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\imgproc\GeneralizedHough.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\imgproc\GeneralizedHoughBallard.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\imgproc\GeneralizedHoughGuil.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\imgproc\Imgproc.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\imgproc\LineSegmentDetector.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\imgproc\Moments.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\imgproc\Subdiv2D.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\ANN_MLP.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\Boost.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\DTrees.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\EM.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\KNearest.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\LogisticRegression.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\Ml.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\NormalBayesClassifier.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\ParamGrid.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\RTrees.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\SVM.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\SVMSGD.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\StatModel.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\ml\TrainData.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\objdetect\BaseCascadeClassifier.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\objdetect\CascadeClassifier.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\objdetect\HOGDescriptor.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\objdetect\Objdetect.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\objdetect\QRCodeDetector.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\AlignExposures.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\AlignMTB.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\CalibrateCRF.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\CalibrateDebevec.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\CalibrateRobertson.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\MergeDebevec.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\MergeExposures.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\MergeMertens.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\MergeRobertson.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\Photo.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\Tonemap.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\TonemapDrago.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\TonemapMantiuk.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\photo\TonemapReinhard.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\unity\ARUtils.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\unity\Utils.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\unity\helper\ImageOptimizationHelper.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\unity\helper\VideoCaptureToMatHelper.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\unity\helper\WebCamTextureToMatHelper.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\utils\Converters.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\utils\MatIndexer.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\utils\MatUtils.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\video\BackgroundSubtractor.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\video\BackgroundSubtractorKNN.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\video\BackgroundSubtractorMOG2.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\video\DISOpticalFlow.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\video\DenseOpticalFlow.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\video\FarnebackOpticalFlow.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\video\KalmanFilter.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\video\SparseOpticalFlow.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\video\SparsePyrLKOpticalFlow.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\video\VariationalRefinement.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\video\Video.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\videoio\VideoCapture.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\videoio\VideoWriter.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv\videoio\Videoio.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\aruco\Aruco.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\aruco\Board.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\aruco\CharucoBoard.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\aruco\DetectorParameters.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\aruco\Dictionary.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\aruco\GridBoard.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\bgsegm\BackgroundSubtractorCNT.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\bgsegm\BackgroundSubtractorGMG.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\bgsegm\BackgroundSubtractorGSOC.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\bgsegm\BackgroundSubtractorLSBP.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\bgsegm\BackgroundSubtractorLSBPDesc.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\bgsegm\BackgroundSubtractorMOG.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\bgsegm\Bgsegm.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\bgsegm\SyntheticSequenceGenerator.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\bioinspired\Bioinspired.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\bioinspired\Retina.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\bioinspired\RetinaFastToneMapping.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\bioinspired\TransientAreasSegmentationModule.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\BIF.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\BasicFaceRecognizer.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\EigenFaceRecognizer.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\Face.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\FaceRecognizer.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\Facemark.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\FacemarkAAM.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\FacemarkKazemi.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\FacemarkLBF.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\FacemarkTrain.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\FisherFaceRecognizer.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\LBPHFaceRecognizer.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\MACE.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\PredictCollector.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\face\StandardCollector.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\img_hash\AverageHash.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\img_hash\BlockMeanHash.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\img_hash\ColorMomentHash.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\img_hash\ImgHashBase.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\img_hash\Img_hash.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\img_hash\MarrHildrethHash.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\img_hash\PHash.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\img_hash\RadialVarianceHash.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\phase_unwrapping\HistogramPhaseUnwrapping.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\phase_unwrapping\Params.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\phase_unwrapping\PhaseUnwrapping.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\phase_unwrapping\Phase_unwrapping.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\plot\Plot.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\plot\Plot2d.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\structured_light\GrayCodePattern.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\structured_light\Params.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\structured_light\SinusoidalPattern.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\structured_light\StructuredLightPattern.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\structured_light\Structured_light.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\text\BaseOCR.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\text\Callback.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\text\ClassifierCallback.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\text\ERFilter.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\text\OCRBeamSearchDecoder.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\text\OCRHMMDecoder.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\text\OCRTesseract.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\text\Text.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\text\TextDetector.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\text\TextDetectorCNN.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\tracking\MultiTracker.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\tracking\Tracker.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\tracking\TrackerBoosting.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\tracking\TrackerCSRT.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\tracking\TrackerGOTURN.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\tracking\TrackerKCF.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\tracking\TrackerMIL.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\tracking\TrackerMOSSE.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\tracking\TrackerMedianFlow.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\tracking\TrackerTLD.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\tracking\Tracking.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\BoostDesc.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\BriefDescriptorExtractor.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\DAISY.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\FREAK.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\HarrisLaplaceFeatureDetector.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\LATCH.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\LUCID.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\MSDDetector.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\PCTSignatures.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\PCTSignaturesSQFD.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\SURF.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\SURF_CUDA.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\StarDetector.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\VGG.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xfeatures2d\Xfeatures2d.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\AdaptiveManifoldFilter.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\ContourFitting.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\DTFilter.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\DisparityFilter.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\DisparityWLSFilter.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\EdgeAwareInterpolator.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\EdgeBoxes.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\FastBilateralSolverFilter.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\FastGlobalSmootherFilter.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\FastLineDetector.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\GraphSegmentation.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\GuidedFilter.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\RFFeatureGetter.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\RICInterpolator.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\RidgeDetectionFilter.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\SelectiveSearchSegmentation.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\SelectiveSearchSegmentationStrategy.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\SelectiveSearchSegmentationStrategyColor.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\SelectiveSearchSegmentationStrategyFill.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\SelectiveSearchSegmentationStrategyMultiple.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\SelectiveSearchSegmentationStrategySize.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\SelectiveSearchSegmentationStrategyTexture.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\SparseMatchInterpolator.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\StructuredEdgeDetection.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\SuperpixelLSC.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\SuperpixelSEEDS.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\SuperpixelSLIC.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\ximgproc\Ximgproc.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xphoto\GrayworldWB.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xphoto\LearningBasedWB.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xphoto\SimpleWB.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xphoto\TonemapDurand.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xphoto\WhiteBalancer.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\OpenCVForUnity\org\opencv_contrib\xphoto\Xphoto.cs" />
-    <Compile Include="Assets\Scripts\ThirdParty\Scripts\UI\TextGamma.cs" />
-    <Compile Include="Assets\Scripts\Tool\AtlasRefCounter.cs" />
-    <Compile Include="Assets\Scripts\Tool\Common\ShadowGamma.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\ButtonMove.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\ButtonTween.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\CurvedText.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\DragScrollRect.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\Gradient.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\GradientAndOutline.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\ImageEx.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\ImageMaterialProperty.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\InverseScale.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\LetterSpacing.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\MyInputModule.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\MyScrollRect.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\MySlider.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\OutlineAndShadow.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\OutlineBetter.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\RawImageEx.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TextNumClip.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TextSpacing.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\ToggleExtend.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TweenColor.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TweenFillAmount.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TweenHeight.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TweenPosition.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TweenRotation.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TweenScale.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TweenScrollRect.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TweenTransform.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TweenTransformPosition.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TweenUVRect.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\TweenWidth.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\UIEffectObjectList.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\UIMirror.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\UIScaleFitter.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\UIShake.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\UISizeFitter.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\UITextId.cs" />
-    <Compile Include="Assets\Scripts\Tool\UGUIExtend\Scripts\UITweener.cs" />
-    <Compile Include="Assets\Scripts\Tool\UITool.cs" />
-    <Compile Include="Assets\Scripts\UI\GameStart.cs" />
-    <Compile Include="Assets\Scripts\UI\Level\Manager\LevelMgr.cs" />
-    <Compile Include="Assets\Scripts\UI\Level\Model\LevelModel.cs" />
-    <Compile Include="Assets\Scripts\UI\Level\View\Cube.cs" />
-    <Compile Include="Assets\Scripts\UI\Level\View\LockGo.cs" />
-    <Compile Include="Assets\Scripts\UI\Level\View\Slot.cs" />
-    <Compile Include="Assets\Scripts\UI\Level\View\Sting.cs" />
-    <Compile Include="Assets\Scripts\UI\Level\View\WinLevelResult.cs" />
-    <Compile Include="Assets\Scripts\UI\Level\View\Wooden.cs" />
-    <Compile Include="Assets\Scripts\UI\WinLevel.cs" />
-    <Compile Include="Assets\Scripts\Util\StringUtility.cs" />
-    <Reference Include="UnityEngine">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ARModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AccessibilityModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AndroidJNIModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AnimationModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AssetBundleModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AudioModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ClothModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ClusterInputModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ClusterRendererModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CrashReportingModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.DSPGraphModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.DirectorModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GameCenterModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GridModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.HotReloadModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ImageConversionModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputLegacyModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.JSONSerializeModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.LocalizationModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ParticleSystemModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PerformanceReportingModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Physics2DModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ProfilerModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ScreenCaptureModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SharedInternalsModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpriteMaskModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpriteShapeModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StreamingModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SubstanceModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SubsystemsModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TLSModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TerrainModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TerrainPhysicsModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextCoreModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TilemapModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIElementsModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UNETModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UmbraModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityAnalyticsModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityConnectModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityTestProtocolModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAudioModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestTextureModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestWWWModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VFXModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VRModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VehiclesModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VideoModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.WindModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XRModule">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
     <Reference Include="EPPlus">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Assets/Scripts/ThirdParty/ExcelPlugins/EPPlus.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Assets/Scripts/ThirdParty/ExcelPlugins/EPPlus.dll</HintPath>
     </Reference>
     <Reference Include="Excel">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Assets/Scripts/ThirdParty/ExcelPlugins/Excel.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Assets/Scripts/ThirdParty/ExcelPlugins/Excel.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Assets/Scripts/ThirdParty/ExcelPlugins/ICSharpCode.SharpZipLib.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Assets/Scripts/ThirdParty/ExcelPlugins/ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Runtime.Serialization.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Runtime.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.Linq.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.Linq.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics.Vectors">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.Vectors.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.Vectors.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Net.Http.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Net.Http.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Microsoft.CSharp.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Microsoft.CSharp.dll</HintPath>
     </Reference>
     <Reference Include="System.Data">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Data.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Data.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Win32.Primitives">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/Microsoft.Win32.Primitives.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/Microsoft.Win32.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
     </Reference>
     <Reference Include="System.AppContext">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.AppContext.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.AppContext.dll</HintPath>
     </Reference>
     <Reference Include="System.Collections.Concurrent">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Concurrent.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Concurrent.dll</HintPath>
     </Reference>
     <Reference Include="System.Collections">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.dll</HintPath>
     </Reference>
     <Reference Include="System.Collections.NonGeneric">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.NonGeneric.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.NonGeneric.dll</HintPath>
     </Reference>
     <Reference Include="System.Collections.Specialized">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Specialized.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Specialized.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.Annotations">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Annotations.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Annotations.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.EventBasedAsync">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.EventBasedAsync.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.EventBasedAsync.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.Primitives">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Primitives.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.TypeConverter">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.TypeConverter.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.TypeConverter.dll</HintPath>
     </Reference>
     <Reference Include="System.Console">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Console.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Console.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.Common">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Data.Common.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Data.Common.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.Contracts">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Contracts.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Contracts.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.Debug">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Debug.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Debug.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.FileVersionInfo">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.FileVersionInfo.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.FileVersionInfo.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.Process">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Process.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Process.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.StackTrace">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.StackTrace.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.StackTrace.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.TextWriterTraceListener">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.Tools">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Tools.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Tools.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.TraceSource">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TraceSource.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TraceSource.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing.Primitives">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Drawing.Primitives.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Drawing.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Dynamic.Runtime">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Dynamic.Runtime.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Dynamic.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="System.Globalization.Calendars">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Calendars.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Calendars.dll</HintPath>
     </Reference>
     <Reference Include="System.Globalization">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.dll</HintPath>
     </Reference>
     <Reference Include="System.Globalization.Extensions">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Extensions.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Compression.ZipFile">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Compression.ZipFile.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Compression.ZipFile.dll</HintPath>
     </Reference>
     <Reference Include="System.IO">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.FileSystem">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.FileSystem.DriveInfo">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.DriveInfo.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.DriveInfo.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.FileSystem.Primitives">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Primitives.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.FileSystem.Watcher">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Watcher.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Watcher.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.IsolatedStorage">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.IsolatedStorage.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.IsolatedStorage.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.MemoryMappedFiles">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.MemoryMappedFiles.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.MemoryMappedFiles.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Pipes">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Pipes.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Pipes.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.UnmanagedMemoryStream">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.UnmanagedMemoryStream.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.UnmanagedMemoryStream.dll</HintPath>
     </Reference>
     <Reference Include="System.Linq">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.dll</HintPath>
     </Reference>
     <Reference Include="System.Linq.Expressions">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Expressions.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Expressions.dll</HintPath>
     </Reference>
     <Reference Include="System.Linq.Parallel">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Parallel.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Parallel.dll</HintPath>
     </Reference>
     <Reference Include="System.Linq.Queryable">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Queryable.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Queryable.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http.Rtc">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Http.Rtc.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Http.Rtc.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.NameResolution">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NameResolution.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NameResolution.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.NetworkInformation">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NetworkInformation.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NetworkInformation.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Ping">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Ping.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Ping.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Primitives">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Primitives.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Requests">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Requests.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Requests.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Security">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Security.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Security.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Sockets">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Sockets.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Sockets.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.WebHeaderCollection">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebHeaderCollection.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebHeaderCollection.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.WebSockets.Client">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.Client.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.Client.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.WebSockets">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.dll</HintPath>
     </Reference>
     <Reference Include="System.ObjectModel">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ObjectModel.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ObjectModel.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection.Emit">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection.Emit.ILGeneration">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.ILGeneration.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.ILGeneration.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection.Emit.Lightweight">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.Lightweight.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.Lightweight.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection.Extensions">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Extensions.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection.Primitives">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Primitives.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Resources.Reader">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Reader.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Reader.dll</HintPath>
     </Reference>
     <Reference Include="System.Resources.ResourceManager">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.ResourceManager.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.ResourceManager.dll</HintPath>
     </Reference>
     <Reference Include="System.Resources.Writer">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Writer.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Writer.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.VisualC">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.CompilerServices.VisualC.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Extensions">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Extensions.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Handles">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Handles.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Handles.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.InteropServices">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Numerics">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Numerics.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Numerics.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization.Formatters">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Formatters.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Formatters.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization.Json">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Json.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization.Primitives">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Primitives.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization.Xml">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Xml.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Xml.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Claims">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Claims.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Claims.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.Algorithms">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Algorithms.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Algorithms.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.Csp">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Csp.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Csp.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.Encoding">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Encoding.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Encoding.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.Primitives">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Primitives.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.X509Certificates">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.X509Certificates.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.X509Certificates.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Principal">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Principal.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Principal.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.SecureString">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.SecureString.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.SecureString.dll</HintPath>
     </Reference>
     <Reference Include="System.ServiceModel.Duplex">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Duplex.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Duplex.dll</HintPath>
     </Reference>
     <Reference Include="System.ServiceModel.Http">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Http.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Http.dll</HintPath>
     </Reference>
     <Reference Include="System.ServiceModel.NetTcp">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.NetTcp.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.NetTcp.dll</HintPath>
     </Reference>
     <Reference Include="System.ServiceModel.Primitives">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Primitives.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.ServiceModel.Security">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Security.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Security.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.Encoding">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.Encoding.Extensions">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.Extensions.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.RegularExpressions">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.RegularExpressions.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.RegularExpressions.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Overlapped">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Overlapped.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Overlapped.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks.Parallel">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.Parallel.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.Parallel.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Thread">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Thread.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Thread.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.ThreadPool">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.ThreadPool.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.ThreadPool.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Timer">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Timer.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Timer.dll</HintPath>
     </Reference>
     <Reference Include="System.ValueTuple">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ValueTuple.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ValueTuple.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.ReaderWriter">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.ReaderWriter.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.ReaderWriter.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XDocument">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XDocument.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XDocument.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XmlDocument">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlDocument.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlDocument.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XmlSerializer">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlSerializer.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlSerializer.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XPath">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XPath.XDocument">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
     <Reference Include="UnityScript">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/UnityScript.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/UnityScript.dll</HintPath>
     </Reference>
     <Reference Include="UnityScript.Lang">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/UnityScript.Lang.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/UnityScript.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Boo.Lang">
-      <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
+        <HintPath>D:/UnityApps/2019.4.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect.Editor">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Path.Editor">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.EditorCoroutines.Editor">
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="PsdPlugin">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Psdimporter.Editor">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>E:/UnityProject/Wooden/Wooden/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{3005D326-2058-B0F1-3841-ACC78451DBAD}</Project>
+      <Project>{26d30530-5820-f1b0-3841-acc78451dbad}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.EditorCoroutines.Editor.csproj">
-      <Project>{C4A16570-E0A6-6532-AD5E-B2DBFA41A314}</Project>
-      <Name>Unity.EditorCoroutines.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

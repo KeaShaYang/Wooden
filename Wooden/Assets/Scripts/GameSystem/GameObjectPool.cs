@@ -6,13 +6,21 @@ public class GameObjectPool : Singleton<GameObjectPool>
 {
     private Dictionary<string, List<GameObject>> objCache;
     private Transform poolRoot;
+    public Transform V_PoolRoot
+    {
+        get
+        {
+            if (null == poolRoot)
+            {
+                GameObject root = new GameObject("PoolRoot");
+                poolRoot = root.GetComponent<Transform>();
+            }
+            return poolRoot;
+        }
+        
+    }
     public void F_Init()
     {
-        if (null == poolRoot)
-        {
-            GameObject root = new GameObject("PoolRoot");
-            poolRoot = root.GetComponent<Transform>();
-        }
         objCache = new Dictionary<string, List<GameObject>>();
     }
     public GameObject CreateObject(string key, GameObject prefab, Vector3 pos,Vector2 scale)

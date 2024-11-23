@@ -25,7 +25,7 @@ public class WinLevelResult : BaseWindow
         m_button2.gameObject.SetActive(false);
     }
    
-    public void F_Init(bool isSuccess)
+    public void F_Init(bool isSuccess, System.Action refreshWinLevel)
     {
         m_isSuccess = isSuccess;
         m_button.gameObject.SetActive(true);
@@ -51,14 +51,15 @@ public class WinLevelResult : BaseWindow
         }
         else
         {
-            m_textDes.text = "是否确认退出？";
+            m_textDes.text = "孔位满了，是否重新开始？";
             m_button.F_Refresh("确定");
             m_button.F_SetClickCall((button) => {
-                UIManager.GetInstance().DestroyUI(F_GetWinType());
+                LevelMgr.GetInstance().V_Model.F_Reset();
             });
             m_button2.gameObject.SetActive(true);
-            m_button2.F_Refresh("取消");
+            m_button2.F_Refresh("返回主界面");
             m_button2.F_SetClickCall((button) => {
+                LevelMgr.GetInstance().V_Model.F_Exit();
                 UIManager.GetInstance().DestroyUI(F_GetWinType());
             });
         }

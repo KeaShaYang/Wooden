@@ -1,6 +1,7 @@
 ﻿using Assets.Scripts.Battle;
 using Assets.Scripts.Define;
 using DG.Tweening;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -28,7 +29,7 @@ public class LevelModel : Model
 
     internal bool F_isLastLevel()
     {
-        q_levelExcelItem nextCfg = F_GetLevelCfg(m_currentLevel+1);
+        q_levelExcelItem nextCfg = F_GetLevelCfg(m_currentLevel + 1);
         if (nextCfg == null)
             return true;
         return false;
@@ -63,21 +64,29 @@ public class LevelModel : Model
     /// 根据关卡初始化颜色数据
     /// </summary>
     /// <param name="wooden">之后要支持多个木块、分层</param>
-    public void F_InitLevel(LockGo[] lockGos,Slot[] slots)
+    public void F_InitLevel(LockGo[] lockGos, Slot[] slots)
     {
         m_lockGos = lockGos;
         m_slotList = slots;
         //todo:改成读玩家数据
         F_ChangeLevel(1);
     }
-    public void F_ChangeLevel(int level)
+
+    /// <summary>
+    /// 切换关卡
+    /// </summary>
+    /// <param name="level">关卡</param>
+    /// <param name="reset">默认非强制重开</param>
+    public void F_ChangeLevel(int level, bool reset = false)
     {
         if (level != m_currentLevel)
         {
             m_removeSting = 0;
-            m_currentLevel = 1;
+            m_currentLevel = level;
             m_canClick = true;
             V_LevelCfg = F_GetLevelCfg(m_currentLevel);
+            if (null != m_wooden)
+                DisplayManager.GetInstance().F_DeleteEitity(m_wooden);
             if (null != V_LevelCfg)
             {
                 m_stingCount = V_LevelCfg.stingNum;
@@ -102,14 +111,10 @@ public class LevelModel : Model
             m_wooden = DisplayManager.GetInstance().F_AddEitity<Wooden>(data);
             m_wooden.transform.position = Vector3.zero;
             //通知winlevel，已移除某位置的螺丝
-            WinLevel win = UIManager.GetInstance().GetSingleUI(EM_WinType.WinLevel) as WinLevel;
-            if (null != win)
-            {
-                win.F_Refresh(true);
-            }
+            RasiseEvent("LevelChange");
         }
     }
-    
+
     /// <summary>
     /// 生成所有钉子颜色列表
     /// </summary>
@@ -160,7 +165,11 @@ public class LevelModel : Model
     /// <returns>颜色类型列表</returns>
     private int F_GetLockColor()
     {
-        return m_lockColors.Pop();
+        if (m_lockColors.Count > 0)
+        {
+            return m_lockColors.Pop(); ;
+        }
+        return 0;
     }
     public int F_GetColor(int stingIndex)
     {
@@ -186,6 +195,7 @@ public class LevelModel : Model
                  lockGo.F_ClearStings();
                  // 动画完成后的处理逻辑
                  int colorType = F_GetLockColor();
+                 Debugger.LogError("colorType" + colorType);
                  if (colorType > 0)
                  {
                      lockGo.transform.localPosition = pos - new Vector3(300, 0, 0);
@@ -201,7 +211,7 @@ public class LevelModel : Model
                                  //检查是否有同色的孔位里的钉子，可以移动到新的锁里
                                  if (!lockGo.V_Full && m_slotList[i].V_IsFull && m_slotList[i].V_ColorType == colorType)
                                  {
-                                     F_RemoveSting(m_slotList[i].V_Sting,true);
+                                     F_RemoveSting(m_slotList[i].V_Sting, true);
                                  }
                              }
                          }
@@ -210,12 +220,42 @@ public class LevelModel : Model
                  else
                  {
                      m_canClick = true;
+                     lockGo.F_Init(colorType, lockGo.V_UnLock);
                  }
              });
         }
     }
-
-    public void F_RemoveSting(Sting sting,bool fromSlot = false)
+    /// <summary>
+    /// 判断钉子是否可以移动
+    /// </summary>
+    /// <param name="sting">钉子对象</param>
+    /// <param name="targetPosition">移动的目标位置</param>
+    /// <returns>是否可以移动</returns>
+    public bool F_CanMoveSting(Sting sting, out Vector3 targetPosition)
+    {
+        targetPosition = sting.transform.position;
+        RaycastHit hit;
+        if (Physics.Raycast(sting.transform.position, sting.transform.up, out hit))
+        {
+            if (hit.distance > 0.3f)
+            {
+                targetPosition = sting.transform.position + new Vector3(0, 1, 0);
+                return true;
+            }
+            else
+            {
+                float time = hit.distance / 2;
+                targetPosition = hit.point;
+                return false;
+            }
+        }
+        else
+        {
+            targetPosition = sting.transform.position + new Vector3(0, 1, 0);
+            return true;
+        }
+    }
+    public void F_RemoveSting(Sting sting, bool fromSlot = false)
     {
         if (!fromSlot)
         {
@@ -234,22 +274,26 @@ public class LevelModel : Model
                 slot.F_InjectSting(sting);
                 sting.transform.SetParent(DisplayManager.GetInstance().V_EntityRoot.transform);
                 RectTransform rect = slot.GetComponent<RectTransform>();
+
                 // 获取目标UI位置的世界坐标
                 Vector3 targetPosition = rect.position;
-                targetPosition.z = 94; // 保持与钉子当前的深度一致          
+                targetPosition.z = 94; // 保持与钉子当前的深度一致
+
                 // 获取屏幕方向（相机的 forward 方向）
                 Vector3 screenDirection = Camera.main.transform.forward;
-                // 计算钉子需要旋转的四元数，使up方向朝向屏幕
-                Quaternion targetRotation = Quaternion.FromToRotation(sting.transform.up, screenDirection) * sting.transform.rotation;
-                // 使用DOTween旋转钉子到目标旋转状态
-                sting.transform.DORotateQuaternion(targetRotation, 0.4f);
-                sting.transform.DOScale(new Vector3(2, 2, 2), 0.5f);
-                // 使用DOTween移动钉子到目标位置
-                sting.transform.DOMove(targetPosition, 0.5f).OnComplete(()=> {
-                    sting.transform.SetParent(slot.transform);
+
+                // 调用Sting类的方法进行旋转和移动
+                sting.F_RotateToScreen(screenDirection);
+                sting.F_MoveToSlot(targetPosition, rect, () =>
+                {
                     slot.F_CheckLock();
-                    win.F_Refresh();
+                    RasiseEvent(EM_LevelEvent.LockChange.ToString());
                 });
+            }
+            else
+            {
+                WinLevelResult winres = UIManager.GetInstance().GetSingleUI(EM_WinType.WinLevelResult) as WinLevelResult;
+                winres.F_Init(false, F_Reset);
             }
         }
         if (V_StingCount - m_removeSting <= 0)
@@ -260,16 +304,31 @@ public class LevelModel : Model
             {
                 WinLevelResult winRes = UIManager.GetInstance().GetSingleUI(EM_WinType.WinLevelResult) as WinLevelResult;
                 if (null != winRes)
-                    winRes.F_Init(true);
-            }, 1, 1 , 1);
+                    winRes.F_Init(true, RefreshWinLevel);
+            }, 1, 1, 1);
         }
+    }
+    /// <summary>
+    /// 重启当前关卡。
+    /// </summary>
+    /// <remarks>
+    /// 此方法将当前关卡重置为初始状态，并调用F_ChangeLevel方法切换到第一个关卡。
+    /// </remarks>
+    public void F_Reset()
+    {
+        F_ChangeLevel(m_currentLevel, true);
+    }
+
+    private void RefreshWinLevel()
+    {
+        RasiseEvent(EM_LevelEvent.LevelChange.ToString());
     }
     private Slot GetEmptySlot(int colorType)
     {
         Slot emptySlot = null;
         for (int i = 0; i < m_lockGos.Length; i++)
         {
-            var lockItem = m_lockGos[i];
+            LockGo lockItem = m_lockGos[i];
             if (colorType == lockItem.V_ColorType && lockItem.V_UnLock)
             {
                 //找到空的孔位
@@ -309,5 +368,12 @@ public class LevelModel : Model
     public Wooden F_GetCurrentWooden()
     {
         return m_wooden;
+    }
+
+    internal void F_Exit()
+    {
+        UIManager.GetInstance().GetSingleUI(EM_WinType.WinMain);
+        UIManager.GetInstance().DestroyUI(EM_WinType.WinLevel);
+        UIManager.GetInstance().DestroyUI(EM_WinType.WinLevelResult);
     }
 }

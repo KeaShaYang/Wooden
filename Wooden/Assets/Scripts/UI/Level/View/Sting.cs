@@ -27,6 +27,7 @@ public class Sting : BaseMonoBehaviour
     private bool m_isMoving = false;
     Material m_material;
     private CapsuleCollider m_collider;
+    private Tween _tween;
 
     // Start is called before the first frame update
     protected override void Awake()
@@ -60,40 +61,26 @@ public class Sting : BaseMonoBehaviour
         m_Parent1 = c1;
         m_Parent2 = c2;
     }
+
     public void F_Move()
     {
-        if (!m_isMoving)
+       if (!m_isMoving)
         {
             m_isMoving = true;
-            m_currentPos.x = transform.position.x;
-            m_currentPos.y = transform.position.y;
-            m_currentPos.z = transform.position.z;
-            //拔钉子
-            //返回是否可拔，播放动画
-            //拔成功的话就增加重力
-            //碰到物体（箱子或钉子或其他就失败）
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position, Vector3.up, out hit))
-            {
-                //如果移动距离大于钉子长度，说明拔出来了，否则要移动回去
-                if (hit.distance > 1)
-                {
-                    F_RemoveSting();
-                }
-                else
-                {
-                    float time = hit.distance / 2;
-                    //移动失败了，先移动到碰撞的位置然后挪获取
-                    transform.DOMove(hit.point, time).OnComplete(() =>
-                    {
-                        transform.DOMove(m_currentPos, time).OnComplete(() => { m_isMoving = false; });
-                    });
-                }
+            Vector3 targetPosition;
+            bool canMove = LevelMgr.GetInstance().V_Model.F_CanMoveSting(this, out targetPosition);
 
+            if (canMove)
+            {
+                F_RemoveSting();
             }
             else
             {
-                F_RemoveSting();
+                float time = Vector3.Distance(transform.position, targetPosition) / 2;
+                _tween = transform.DOMove(targetPosition, time).OnComplete(() =>
+                {
+                    _tween = transform.DOMove(m_currentPos, time).OnComplete(() => { m_isMoving = false; });
+                });
             }
         }
     }
@@ -102,7 +89,7 @@ public class Sting : BaseMonoBehaviour
         m_collider.enabled = false;
         Destroy(m_rigidBody);
         m_rigidBody = null;
-        transform.DOMove(m_currentPos + new Vector3(0, 1, 0), 2f).SetSpeedBased(true).OnComplete(() =>
+        _tween = transform.DOMove(m_currentPos + new Vector3(0, 1, 0), 2f).SetSpeedBased(true).OnComplete(() =>
         {
             isMoved = true;
             LevelMgr.GetInstance().V_Model.F_RemoveSting(this);
@@ -116,6 +103,31 @@ public class Sting : BaseMonoBehaviour
                 m_Parent2.F_RemoveSting(this);
             }
         });
+    }
+    public void F_RotateToScreen(Vector3 screenDirection)
+    {
+        // 计算钉子需要旋转的四元数，使up方向朝向屏幕
+        Quaternion targetRotation = Quaternion.FromToRotation(transform.up, screenDirection) * transform.rotation;
+        // 使用DOTween旋转钉子到目标旋转状态
+        transform.DORotateQuaternion(targetRotation, 0.4f);
+    }
 
+    public void F_MoveToSlot(Vector3 targetPosition, RectTransform slotRect, System.Action onComplete)
+    {
+        // 使用DOTween缩放钉子到指定大小
+        transform.DOScale(new Vector3(2, 2, 2), 0.5f);
+        // 使用DOTween移动钉子到目标位置
+        _tween = transform.DOMove(targetPosition, 0.5f).OnComplete(() =>
+        {
+            // 将字符串的父对象设置为插槽的变换组件
+            transform.SetParent(slotRect.transform);
+            // 执行完成后的回调
+            onComplete?.Invoke();
+        });
+    }
+    private void OnDestroy()
+    {
+        if (_tween != null)
+            _tween.Kill();
     }
 }

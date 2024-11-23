@@ -423,10 +423,10 @@ RectTransform:
   m_Father: {fileID: 6556579770682017407}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 820, y: 1560}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6556579770203385396
 CanvasRenderer:
@@ -474,8 +474,8 @@ GameObject:
   - component: {fileID: 6556579770682017404}
   - component: {fileID: 6177359240018100470}
   - component: {fileID: 6556579770682017406}
-  - component: {fileID: 4520653353732311916}
   - component: {fileID: 6555800895783645261}
+  - component: {fileID: 5679218807091889549}
   m_Layer: 5
   m_Name: WinLevel
   m_TagString: Untagged
@@ -557,35 +557,6 @@ MonoBehaviour:
   m_LockList: []
   m_slotList: []
   m_LayoutGroup: {fileID: 409479750635332608}
---- !u!114 &4520653353732311916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6556579770682017392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.7882353, g: 0.78431374, b: 0.84705883, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!114 &6555800895783645261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -603,6 +574,32 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &5679218807091889549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6556579770682017392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d385c6a7fd68c2a47adff2b532252613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: a5b8eb5f0035ab4468c99b58efbedd02, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
 --- !u!1 &6775548630226945225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,7 +1101,7 @@ PrefabInstance:
     - target: {fileID: 7357453667678831300, guid: 2113221039e878e42b85c16408e819f4,
         type: 3}
       propertyPath: m_Name
-      value: Lock (1)
+      value: Lock2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2113221039e878e42b85c16408e819f4, type: 3}
@@ -1354,7 +1351,7 @@ PrefabInstance:
     - target: {fileID: 7357453667678831300, guid: 2113221039e878e42b85c16408e819f4,
         type: 3}
       propertyPath: m_Name
-      value: Lock (2)
+      value: Lock3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2113221039e878e42b85c16408e819f4, type: 3}
@@ -2104,7 +2101,7 @@ PrefabInstance:
     - target: {fileID: 7357453667678831300, guid: 2113221039e878e42b85c16408e819f4,
         type: 3}
       propertyPath: m_Name
-      value: Lock (3)
+      value: Lock4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2113221039e878e42b85c16408e819f4, type: 3}
@@ -2479,7 +2476,7 @@ PrefabInstance:
     - target: {fileID: 7357453667678831300, guid: 2113221039e878e42b85c16408e819f4,
         type: 3}
       propertyPath: m_Name
-      value: Lock
+      value: Lock1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2113221039e878e42b85c16408e819f4, type: 3}

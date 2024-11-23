@@ -344,7 +344,7 @@ Camera:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.8627451, g: 0.88235295, b: 0.90588236, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -418,7 +418,7 @@ Camera:
   m_GameObject: {fileID: 1185676709}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.8627451, g: 0.88235295, b: 0.90588236, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -435,7 +435,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 25
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: 0
   m_CullingMask:
@@ -533,7 +533,7 @@ Canvas:
   m_GameObject: {fileID: 1448602767}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 2
   m_Camera: {fileID: 963194227}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -552,18 +552,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448602767}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.05305119, y: -0, z: -0, w: 0.99859184}
+  m_LocalPosition: {x: 0, y: 0, z: 89.43711}
+  m_LocalScale: {x: 0.07401927, y: 0.07401927, z: 0.07401927}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -9.595297}
+  m_SizeDelta: {x: 720, y: 1560}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2099294683
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,9 +593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a91651c502d84b64f866bea9cc9be4da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Render: {fileID: 8400000, guid: 802c089454dc902409e7e114f3deac80, type: 2}
   m_Camera: {fileID: 1185676710}
-  m_wooden: {fileID: 0}
 --- !u!4 &2099294685
 Transform:
   m_ObjectHideFlags: 0

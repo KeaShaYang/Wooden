@@ -20,12 +20,11 @@ public class LockGo : BaseMonoBehaviour
     private Image m_Image;
     private int m_slotLength = 0;
     public ClickUIObj m_LockBtn;
-    private List<Sting> m_haveStings = new List<Sting>();
+    public List<Sting> m_haveStings = new List<Sting>();
     protected override void Awake()
     {
         m_Image = GetComponent<Image>();
         m_SlotArr = GetComponentsInChildren<Slot>();
-        
     }
 
 
@@ -46,12 +45,12 @@ public class LockGo : BaseMonoBehaviour
     private void F_SetColor(int colorType)
     {
         m_colorType = colorType;
-        if (colorType == 0)
-            m_isFull = false;
+        m_isFull = false;
         q_colorExcelItem cfg = ExcelManager.GetInstance().GetExcelItem<q_color, q_colorExcelItem>(colorType);
         if (null != cfg)
         // 修改颜色为红色
         {
+            F_SetActive(true);
             Color color = new Color();
             if (ColorUtility.TryParseHtmlString(cfg.valueType, out color))
             {
@@ -62,6 +61,8 @@ public class LockGo : BaseMonoBehaviour
                 m_SlotArr[i].F_Init(colorType, this);
             }
         }
+        else
+            F_SetActive(!V_UnLock);
     }
     /// <summary>
     /// 孔位装入钉子时回调
@@ -98,5 +99,10 @@ public class LockGo : BaseMonoBehaviour
         //记录这个锁持有的螺丝
         //方便重置锁的时候把旧的螺丝销毁
         m_haveStings.Clear();
+    }
+    public void F_SetActive(bool active)
+    {
+        Debugger.LogError("显示锁"+gameObject.name);
+        gameObject.SetActive(active); 
     }
 }

@@ -2,20 +2,25 @@
 
 public class GameStart : MonoBehaviour
 {
-    public RenderTexture m_Render;
+    //public RenderTexture m_Render;
     public Camera m_Camera;
     private Vector2 previousTouchPosition;
     private float rotationSpeed = 0.5f;
     private Wooden m_wooden;
+    void Awake()
+    {
+        DontDestroyOnLoad(this);
+        GameMgr.GetInstance().F_InitManager();
+        DontDestroyOnLoad(GameObjectPool.GetInstance().V_PoolRoot);
+    }
     void Start()
     {
-        GameMgr.GetInstance().F_InitManager();
         BaseWindow win = UIManager.GetInstance().GetSingleUI(Assets.Scripts.Define.EM_WinType.WinLevel);
         if (null != win)
         {
             WinLevel winLevel = win as WinLevel;
             //todo:obj就是每个关卡要拆的模型，后面要改成动态生成
-            winLevel.F_Init(m_Render);
+            winLevel.F_Init(m_Camera);
         }
     }
 
