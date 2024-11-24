@@ -1,27 +1,23 @@
 ﻿using UnityEngine;
 
-public class GameStart : MonoBehaviour
+public class GameStart : BaseMonoBehaviour
 {
-    //public RenderTexture m_Render;
-    public Camera m_Camera;
     private Vector2 previousTouchPosition;
     private float rotationSpeed = 0.5f;
     private Wooden m_wooden;
-    void Awake()
+    private AudioManager m_audioMgr;
+    protected override void Awake()
     {
         DontDestroyOnLoad(this);
         GameMgr.GetInstance().F_InitManager();
         DontDestroyOnLoad(GameObjectPool.GetInstance().V_PoolRoot);
+        m_audioMgr = GetComponent<AudioManager>();
+        m_audioMgr.PlayBGMAudio("game_bgm_06");
     }
     void Start()
     {
-        BaseWindow win = UIManager.GetInstance().GetSingleUI(Assets.Scripts.Define.EM_WinType.WinLevel);
-        if (null != win)
-        {
-            WinLevel winLevel = win as WinLevel;
-            //todo:obj就是每个关卡要拆的模型，后面要改成动态生成
-            winLevel.F_Init(m_Camera);
-        }
+        UIManager.GetInstance().GetSingleUI(Assets.Scripts.Define.EM_WinType.WinMain);
+       
     }
 
     private void Update()

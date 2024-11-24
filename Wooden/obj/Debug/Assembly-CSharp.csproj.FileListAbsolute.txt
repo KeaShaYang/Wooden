@@ -1,0 +1,2 @@
+E:\UnityProject\Wooden\Wooden\obj\Debug\Assembly-CSharp.csproj.AssemblyReference.cache
+E:\UnityProject\Wooden\Wooden\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

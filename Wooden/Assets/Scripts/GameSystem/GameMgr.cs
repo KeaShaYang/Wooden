@@ -14,8 +14,7 @@ class GameMgr : Singleton<GameMgr>
         TimerMgr.GetInstance().Init();
         GameObjectPool.GetInstance().F_Init();
         DisplayManager.GetInstance().F_Init();
-        PanelManager.GetInstance().F_Init();
-        
+        PanelManager.GetInstance().F_Init(); 
     }
 
     ///gamemgr管理游戏进度，如游戏暂停，引导系统，战斗系统，UI系统等。其他系统不得互相调用

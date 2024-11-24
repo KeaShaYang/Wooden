@@ -1,4 +1,4 @@
-﻿using Assets.Scripts.Battle;
+using Assets.Scripts.Battle;
 using Assets.Scripts.Define;
 using DG.Tweening;
 using System;
@@ -79,7 +79,7 @@ public class LevelModel : Model
     /// <param name="reset">默认非强制重开</param>
     public void F_ChangeLevel(int level, bool reset = false)
     {
-        if (level != m_currentLevel)
+        if (level != m_currentLevel || reset)
         {
             m_removeSting = 0;
             m_currentLevel = level;
@@ -111,7 +111,7 @@ public class LevelModel : Model
             m_wooden = DisplayManager.GetInstance().F_AddEitity<Wooden>(data);
             m_wooden.transform.position = Vector3.zero;
             //通知winlevel，已移除某位置的螺丝
-            RasiseEvent("LevelChange");
+            RasiseEvent(EM_LevelEvent.LevelChange.ToString(),true);
         }
     }
 
@@ -163,7 +163,7 @@ public class LevelModel : Model
     /// </summary>
     /// <param name="lockCount">需要生成颜色的锁的总数</param>
     /// <returns>颜色类型列表</returns>
-    private int F_GetLockColor()
+    public int F_GetLockColor()
     {
         if (m_lockColors.Count > 0)
         {
@@ -186,43 +186,18 @@ public class LevelModel : Model
     {
         if (null != lockGo && lockGo.V_UnLock && lockGo.V_Full)
         {
-            //播放上移动画加alpha 1-> 0，移动完再让点
-            m_canClick = false;
-            Vector3 pos = lockGo.transform.localPosition;
-            lockGo.transform.DOLocalMoveY(pos.y + 300f, 0.2f)  // 2 秒内向上移动 100 单位
-             .SetEase(Ease.Linear).OnComplete(() =>
-             {
-                 lockGo.F_ClearStings();
-                 // 动画完成后的处理逻辑
-                 int colorType = F_GetLockColor();
-                 Debugger.LogError("colorType" + colorType);
-                 if (colorType > 0)
-                 {
-                     lockGo.transform.localPosition = pos - new Vector3(300, 0, 0);
-                     // 2 秒内向右移动 100 单位
-                     lockGo.transform.DOLocalMoveX(pos.x, 0.2f).SetEase(Ease.Linear).OnComplete(() =>
-                     {
-                         lockGo.F_Init(colorType, lockGo.V_UnLock);
-                         m_canClick = true;
-                         if (lockGo.V_UnLock)
-                         {
-                             for (int i = 0; i < m_slotList.Length; i++)
-                             {
-                                 //检查是否有同色的孔位里的钉子，可以移动到新的锁里
-                                 if (!lockGo.V_Full && m_slotList[i].V_IsFull && m_slotList[i].V_ColorType == colorType)
-                                 {
-                                     F_RemoveSting(m_slotList[i].V_Sting, true);
-                                 }
-                             }
-                         }
-                     });
-                 }
-                 else
-                 {
-                     m_canClick = true;
-                     lockGo.F_Init(colorType, lockGo.V_UnLock);
-                 }
-             });
+            lockGo.F_RemoveAndReinit(() =>
+            {
+                //重新生成颜色之后遍历孔位上的所有钉子
+                for (int i = 0; i < m_slotList.Length; i++)
+                {
+                    // 检查是否有同色的孔位里的钉子，可以移动到新的锁里
+                    if (!lockGo.V_Full && m_slotList[i].V_IsFull && m_slotList[i].V_ColorType == lockGo.V_ColorType)
+                    {
+                        F_RemoveSting(m_slotList[i].V_Sting, true);
+                    }
+                }
+            });
         }
     }
     /// <summary>
@@ -271,29 +246,20 @@ public class LevelModel : Model
             Slot slot = GetEmptySlot(sting.V_ColorType);
             if (null != slot && null != m_wooden)
             {
-                slot.F_InjectSting(sting);
-                sting.transform.SetParent(DisplayManager.GetInstance().V_EntityRoot.transform);
-                RectTransform rect = slot.GetComponent<RectTransform>();
-
-                // 获取目标UI位置的世界坐标
-                Vector3 targetPosition = rect.position;
-                targetPosition.z = 94; // 保持与钉子当前的深度一致
-
-                // 获取屏幕方向（相机的 forward 方向）
-                Vector3 screenDirection = Camera.main.transform.forward;
-
-                // 调用Sting类的方法进行旋转和移动
-                sting.F_RotateToScreen(screenDirection);
-                sting.F_MoveToSlot(targetPosition, rect, () =>
-                {
+                //如果是锁上门的孔位且锁还在运动则先设置服务提在移动
+                slot.F_InjectSting(sting,slot,()=> {
                     slot.F_CheckLock();
                     RasiseEvent(EM_LevelEvent.LockChange.ToString());
+                    if (null == GetEmptySlot(sting.V_ColorType))
+                    {
+                        ShowResult(false);
+                    }
                 });
+                
             }
             else
             {
-                WinLevelResult winres = UIManager.GetInstance().GetSingleUI(EM_WinType.WinLevelResult) as WinLevelResult;
-                winres.F_Init(false, F_Reset);
+                ShowResult(false);
             }
         }
         if (V_StingCount - m_removeSting <= 0)
@@ -302,9 +268,7 @@ public class LevelModel : Model
             m_canClick = false;
             TimerMgr.GetInstance().Schedule(() =>
             {
-                WinLevelResult winRes = UIManager.GetInstance().GetSingleUI(EM_WinType.WinLevelResult) as WinLevelResult;
-                if (null != winRes)
-                    winRes.F_Init(true, RefreshWinLevel);
+                ShowResult(true);
             }, 1, 1, 1);
         }
     }
@@ -319,10 +283,6 @@ public class LevelModel : Model
         F_ChangeLevel(m_currentLevel, true);
     }
 
-    private void RefreshWinLevel()
-    {
-        RasiseEvent(EM_LevelEvent.LevelChange.ToString());
-    }
     private Slot GetEmptySlot(int colorType)
     {
         Slot emptySlot = null;
@@ -372,8 +332,30 @@ public class LevelModel : Model
 
     internal void F_Exit()
     {
+        DisplayManager.GetInstance().F_DeleteEntityAll(EM_EntityType.Wooden);
         UIManager.GetInstance().GetSingleUI(EM_WinType.WinMain);
         UIManager.GetInstance().DestroyUI(EM_WinType.WinLevel);
         UIManager.GetInstance().DestroyUI(EM_WinType.WinLevelResult);
+    }
+
+    private void RefreshWinLevel()
+    {
+        RasiseEvent(EM_LevelEvent.LevelChange.ToString());
+    }
+    private void ShowResult(bool success)
+    {
+        if (!success)
+        {
+            m_canClick = false;
+            WinLevelResult winres = UIManager.GetInstance().GetSingleUI(EM_WinType.WinLevelResult) as WinLevelResult;
+            winres.F_Init(false, F_Reset);
+        }
+        else
+        {
+            WinLevelResult winRes = UIManager.GetInstance().GetSingleUI(EM_WinType.WinLevelResult) as WinLevelResult;
+            if (null != winRes)
+                winRes.F_Init(true, RefreshWinLevel);
+        }
+       
     }
 }

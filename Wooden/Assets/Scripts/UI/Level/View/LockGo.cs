@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.UI;
+using DG.Tweening;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -102,7 +103,38 @@ public class LockGo : BaseMonoBehaviour
     }
     public void F_SetActive(bool active)
     {
-        Debugger.LogError("显示锁"+gameObject.name);
         gameObject.SetActive(active); 
+    }
+    public void F_RemoveAndReinit(Action callBack)
+    {
+        if (V_UnLock && V_Full)
+        {
+            // 播放上移动画加alpha 1-> 0，移动完再让点
+            Vector3 pos = transform.localPosition;
+            transform.DOLocalMoveY(pos.y + 300f, 0.2f)  // 2 秒内向上移动 100 单位
+             .SetEase(Ease.Linear).OnComplete(() =>
+             {
+                 F_ClearStings();
+                 // 动画完成后的处理逻辑
+                 int colorType = LevelMgr.GetInstance().V_Model.F_GetLockColor();
+                 if (colorType > 0)
+                 {
+                     transform.localPosition = pos - new Vector3(300, 0, 0);
+                     F_Init(colorType, V_UnLock);
+                     // 2 秒内向右移动 100 单位
+                     transform.DOLocalMoveX(pos.x, 0.2f).SetEase(Ease.Linear).OnComplete(() =>
+                     {
+                         if (V_UnLock)
+                         {
+                             callBack();
+                         }
+                     });
+                 }
+                 else
+                 {
+                     F_Init(colorType, V_UnLock);
+                 }
+             });
+        }
     }
 }

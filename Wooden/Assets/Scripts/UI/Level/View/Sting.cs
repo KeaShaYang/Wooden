@@ -67,17 +67,17 @@ public class Sting : BaseMonoBehaviour
        if (!m_isMoving)
         {
             m_isMoving = true;
-            Vector3 targetPosition;
-            bool canMove = LevelMgr.GetInstance().V_Model.F_CanMoveSting(this, out targetPosition);
-
+            Vector3 hitPos;
+            bool canMove = LevelMgr.GetInstance().V_Model.F_CanMoveSting(this, out hitPos);
             if (canMove)
             {
                 F_RemoveSting();
             }
             else
             {
-                float time = Vector3.Distance(transform.position, targetPosition) / 2;
-                _tween = transform.DOMove(targetPosition, time).OnComplete(() =>
+                m_currentPos = transform.position;
+                float time = Vector3.Distance(hitPos, transform.position) / 2;
+                _tween = transform.DOMove(hitPos, time).OnComplete(() =>
                 {
                     _tween = transform.DOMove(m_currentPos, time).OnComplete(() => { m_isMoving = false; });
                 });
@@ -89,7 +89,7 @@ public class Sting : BaseMonoBehaviour
         m_collider.enabled = false;
         Destroy(m_rigidBody);
         m_rigidBody = null;
-        _tween = transform.DOMove(m_currentPos + new Vector3(0, 1, 0), 2f).SetSpeedBased(true).OnComplete(() =>
+        _tween = transform.DOLocalMoveY(transform.position.y+0.5f, 2f).SetSpeedBased(true).OnComplete(() =>
         {
             isMoved = true;
             LevelMgr.GetInstance().V_Model.F_RemoveSting(this);
@@ -109,18 +109,18 @@ public class Sting : BaseMonoBehaviour
         // 计算钉子需要旋转的四元数，使up方向朝向屏幕
         Quaternion targetRotation = Quaternion.FromToRotation(transform.up, screenDirection) * transform.rotation;
         // 使用DOTween旋转钉子到目标旋转状态
-        transform.DORotateQuaternion(targetRotation, 0.4f);
+        transform.DORotateQuaternion(targetRotation, 0.5f);
     }
 
     public void F_MoveToSlot(Vector3 targetPosition, RectTransform slotRect, System.Action onComplete)
     {
         // 使用DOTween缩放钉子到指定大小
-        transform.DOScale(new Vector3(2, 2, 2), 0.5f);
+        //transform.DOScale(new Vector3(2, 2, 2), 0.5f);
         // 使用DOTween移动钉子到目标位置
-        _tween = transform.DOMove(targetPosition, 0.5f).OnComplete(() =>
+        _tween = transform.DOLocalMove(targetPosition, 0.5f).OnComplete(() =>
         {
             // 将字符串的父对象设置为插槽的变换组件
-            transform.SetParent(slotRect.transform);
+            //transform.SetParent(slotRect.transform);
             // 执行完成后的回调
             onComplete?.Invoke();
         });

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class Slot : BaseMonoBehaviour
 {
@@ -28,7 +29,7 @@ public class Slot : BaseMonoBehaviour
     /// 钉子移动到该孔位
     /// </summary>
     /// <param name="sting">钉子</param>
-    public void F_InjectSting(Sting sting)
+    public void F_InjectSting(Sting sting,Slot slot,Action callBack)
     {
         m_isFull = true;
         m_colorType = sting.V_ColorType;
@@ -40,6 +41,22 @@ public class Slot : BaseMonoBehaviour
         {
             m_sting = sting;
         }
+        sting.transform.SetParent(slot.transform);
+        RectTransform rect = slot.GetComponent<RectTransform>();
+
+        // 获取目标UI位置的世界坐标
+        Vector3 targetPosition = Vector3.zero;
+        //targetPosition.z = 94; // 保持与钉子当前的深度一致
+
+        // 获取屏幕方向（相机的 forward 方向）
+        Vector3 screenDirection = Camera.main.transform.forward;
+
+        // 调用Sting类的方法进行旋转和移动
+        sting.F_RotateToScreen(screenDirection);
+        sting.F_MoveToSlot(targetPosition, rect, () =>
+        {
+            callBack();
+        });
     }
     public void F_CheckLock()
     {
@@ -58,5 +75,4 @@ public class Slot : BaseMonoBehaviour
         if (!isUnlock)
             gameObject.SetActive(false);
     }
-  
 }
